@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SofEnvelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<sessionID>${body.variables.MILES_sessionID}</sessionID>
+    <#outputformat "XML">
+    ${body.dataTransformed?no_esc}
+    </#outputformat>
+	<metadata>
+		<operationstatus businesserror="true" calculationerror="true" technicalerror="true"/>
+	</metadata>
+</SofEnvelope>
