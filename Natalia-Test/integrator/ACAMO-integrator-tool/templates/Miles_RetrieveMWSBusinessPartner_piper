@@ -1,0 +1,13 @@
+{
+    "pipes": [
+        {
+            "type": "action",
+            "name": "Miles_RetrieveMWSBusinessPartner",
+            "script": "headers['x-api-key']='f0f02a1c-8da3-4e28-bf54-214625af1c58'; headers['abbreviation']=body.variables.abbreviation; headers.handleSoapExceptionTemplate = 'callMiles_error'; headers.handleExceptionTemplate = 'callMiles_error'"
+        },
+        {
+            "type": "transform",
+            "name": "Miles_RetrieveMWSBusinessPartner_setVariables"
+        }
+    ]
+}
