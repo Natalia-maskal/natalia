@@ -1,0 +1,24 @@
+<#if body.errorOccured??>
+    <@printObjectToJson source=body /> 
+<#else>
+    <#if body.MWSCustomer??>
+        <#assign isProspect = body.MWSCustomer.isProspect />
+        {
+            "status" : "true",
+            "processVariables" : {
+                "MILES_partnerId": <#if body.MWSCustomer.partnerId?is_string>"${body.MWSCustomer.partnerId?json_string}"<#else>""</#if>,
+                "MILES_personId": <#if body.MWSCustomer.PrimaryContact?? && body.MWSCustomer.PrimaryContact.personId?is_string>"${body.MWSCustomer.PrimaryContact.personId?json_string}"<#else>""</#if>,
+                "MILES_isProspect" : <#if body.MWSCustomer.isProspect?is_string>"${body.MWSCustomer.isProspect?json_string}"<#else>""</#if>,
+            }
+        }
+    <#else>
+        {
+            "errorOccured": "true",
+            "status": "true",
+            "bpmnError": {
+                "bpmnErrorCode": "MilesEmptyBodyError",
+                "bpmnErrorMessage": "Can't create new MWSCustomer please check integrator template"
+            }
+        }
+    </#if>
+</#if>
