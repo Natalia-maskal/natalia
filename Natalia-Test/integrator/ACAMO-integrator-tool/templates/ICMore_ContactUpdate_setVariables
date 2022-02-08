@@ -1,0 +1,8 @@
+<#if body.errorOccured??>
+    <@printObjectToJson source=body /> 
+<#else>
+    {
+        "status" : "true",
+        "processVariables" : {}
+    }
+</#if>
