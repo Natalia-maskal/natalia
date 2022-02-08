@@ -1,0 +1,21 @@
+<#if body.errorOccured??>
+    <@printObjectToJson source=body /> 
+<#else>
+    <#if body.SofToken??>
+        {
+            "status" : "true",
+            "processVariables" : {
+                "MILES_sessionID": "${body.SofToken.sessionID}"
+            }
+        }
+    <#else>
+        {
+            "errorOccured": "true",
+            "status": "true",
+            "bpmnError": {
+                "bpmnErrorCode": "MilesEmptyBodyError",
+                "bpmnErrorMessage": "Can't get sessionID please check integrator template"
+            }
+        }
+    </#if>
+</#if>
