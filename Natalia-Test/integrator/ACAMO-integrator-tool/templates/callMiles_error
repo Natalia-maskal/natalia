@@ -1,0 +1,22 @@
+{
+    "errorOccured": "true",
+    "status": "true",
+    <#if body?? && body.description?? && body.description?is_string && body.description?contains("The maximum rate of requests was exceeded")>
+        "bpmnError": {
+            "bpmnErrorCode": "MilesMaxCallRateError",
+            "bpmnErrorMessage": "${body.description?json_string}"
+        }
+    <#else>
+        "bpmnError": {
+            "bpmnErrorCode": "MilesCallFailedError",
+            
+        <#if body?? && body.description?? && body.description?is_hash && body.description.detail??>
+            "bpmnErrorMessage": "${body.description.detail?json_string}"
+        <#elseif body.description?? && body.description?is_string>
+            "bpmnErrorMessage": "${body.description?json_string}"
+        <#else>
+            "bpmnErrorMessage": "Miles call failed. Check integrator for details."
+        </#if>
+        }
+    </#if>
+}
