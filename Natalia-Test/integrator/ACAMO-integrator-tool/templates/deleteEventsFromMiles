@@ -1,0 +1,8 @@
+{
+    "SessionId": ${body.variables.Miles_SessionId},
+    "country": "es",
+    "apiObject":
+        {
+            "ideventqueue" : ${body.variables.Miles_ideventqueue}
+        }
+}
