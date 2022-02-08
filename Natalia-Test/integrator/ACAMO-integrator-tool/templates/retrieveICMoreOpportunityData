@@ -1,0 +1,24 @@
+<soapenv:Envelope xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/07/secext" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:opp="urn:crmondemand/ws/ecbs/opportunity/"
+    xmlns:quer="urn:/crmondemand/xml/Opportunity/Query">
+    <soapenv:Header>
+        <wsse:Security soapenv:mustUnderstand="1">
+            <wsse:UsernameToken>
+                <wsse:Username>${getICMoreUserName(body.variables.queuename)}</wsse:Username>
+                <wsse:Password Type="wsse:PasswordText">${getICMorePassword(body.variables.queuename)}</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <opp:OpportunityQueryPage_Input>
+            <quer:ListOfOpportunity pagesize="50" startrownum="0" recordcountneeded="true">
+                <quer:Opportunity>
+                    <quer:Id>='${body.variables.OpportunityId}'</quer:Id>
+                    <quer:ExternalSystemId />
+                    <quer:OpportunityName />
+                    <quer:KeyContactLastName />
+                </quer:Opportunity>
+            </quer:ListOfOpportunity>
+        </opp:OpportunityQueryPage_Input>
+    </soapenv:Body>
+</soapenv:Envelope>
