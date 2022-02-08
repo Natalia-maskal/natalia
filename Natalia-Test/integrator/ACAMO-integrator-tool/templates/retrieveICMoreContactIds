@@ -1,0 +1,22 @@
+<soapenv:Envelope xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/07/secext" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="urn:crmondemand/ws/ecbs/contact/" xmlns:quer="urn:/crmondemand/xml/Contact/Query">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1">
+         <wsse:UsernameToken>
+            <wsse:Username>${getICMoreUserName(body.variables.queuename)}</wsse:Username>
+            <wsse:Password Type="wsse:PasswordText">${getICMorePassword(body.variables.queuename)}</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <con:ContactQueryPage_Input>
+         <quer:ListOfContact>
+            <!--Optional:-->
+            <quer:Contact operation="ContactQueryPage">
+               <quer:Id />
+               <!--Label ICMore: Salutation-->
+               <quer:AccountId>='${body.variables.ACCOUNT_Id}'</quer:AccountId>
+            </quer:Contact>
+         </quer:ListOfContact>
+    	</con:ContactQueryPage_Input>
+   </soapenv:Body>
+</soapenv:Envelope>
