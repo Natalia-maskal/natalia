@@ -1,0 +1,22 @@
+<#if body.errorOccured??>
+    <@printObjectToJson source=body /> 
+<#else>
+    <#if body.MWSRequest??>
+        <#assign MWSRequest = body.MWSRequest />
+        {
+            "status" : "true",
+            "processVariables" : {
+                "MWSRequest_quoteId": <#if MWSRequest.quoteId?is_string>"${MWSRequest.quoteId?json_string}"<#else>""</#if>
+            }
+        }
+    <#else>
+        {
+            "errorOccured": "true",
+            "status": "true",
+            "bpmnError": {
+                "bpmnErrorCode": "MilesEmptyBodyError",
+                "bpmnErrorMessage": "Can't create new MWSRequest please check integrator template"
+            }
+        }
+    </#if>
+</#if>
