@@ -1,0 +1,26 @@
+<#if body.errorOccured??>
+    <@printObjectToJson source=body />
+<#elseif body.status == "NOK">
+    {
+        "errorOccured": "true",
+        "status": "true",
+        "bpmnError": {
+            "bpmnErrorCode": "MilesCallFailedError",
+            "bpmnErrorMessage": "${body.message}"
+        }
+    }
+<#else>
+    <#assign apiObject = body.apiObject />
+    <#if 0 < apiObject?size>
+    {
+        "status" : "true",
+        "processVariables" :
+            <@addPrefixToParams jsonObj=apiObject[0] prefix="Miles_" additionalData={"gotNewEvent": "true", "deleteEvent": "false"} />
+    }
+    <#else>
+     {
+        "status" : "true",
+        "processVariables": {"gotNewEvent": "false"}
+    }
+    </#if>
+</#if>
