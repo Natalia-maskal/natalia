@@ -7,18 +7,18 @@
     "uri": "${icMoreEndpoint}/Services/Integration"
   },
   {
-    "dummy": "false",
-    "soapname": "updateAccountICMore",
-    "name": "updateAccountICMore",
-    "soapAction": "\"document/urn:crmondemand/ws/ecbs/account/:AccountUpdate\"",
-    "uri": "${icMoreEndpoint}/Services/Integration"
-  },
-  {
     "dummy": "true",
     "soapname": "retrieveBIinfoMockedResponse",
     "name": "retrieveBIinfoMockedResponse",
     "soapAction": "retrieveBIinfoMockedResponse",
     "uri": "retrieveBIinfoMockedResponse"
+  },
+  {
+    "dummy": "false",
+    "soapname": "updateAccountICMore",
+    "name": "updateAccountICMore",
+    "soapAction": "\"document/urn:crmondemand/ws/ecbs/account/:AccountUpdate\"",
+    "uri": "${icMoreEndpoint}/Services/Integration"
   },
   {
     "dummy": "false",
@@ -35,13 +35,6 @@
     "uri": "${icMoreEndpoint}/Services/Integration"
   },
   {
-    "dummy": "true",
-    "soapname": "retrieveAutomaticCreditScoreMockedResponseSuccessD",
-    "name": "retrieveAutomaticCreditScoreMockedResponseSuccessD",
-    "soapAction": "retrieveAutomaticCreditScoreMockedResponseSuccessD",
-    "uri": "retrieveAutomaticCreditScoreMockedResponseSuccessD"
-  },
-  {
     "dummy": "false",
     "soapname": "retrieveICMoreUserData",
     "name": "retrieveICMoreUserData",
@@ -50,10 +43,10 @@
   },
   {
     "dummy": "true",
-    "soapname": "retrieveAutomaticCreditScoreMockedResponseSuccessR",
-    "name": "retrieveAutomaticCreditScoreMockedResponseSuccessR",
-    "soapAction": "retrieveAutomaticCreditScoreMockedResponseSuccessR",
-    "uri": "retrieveAutomaticCreditScoreMockedResponseSuccessR"
+    "soapname": "retrieveAutomaticCreditScoreMockedResponseSuccessD",
+    "name": "retrieveAutomaticCreditScoreMockedResponseSuccessD",
+    "soapAction": "retrieveAutomaticCreditScoreMockedResponseSuccessD",
+    "uri": "retrieveAutomaticCreditScoreMockedResponseSuccessD"
   },
   {
     "dummy": "true",
@@ -61,6 +54,13 @@
     "name": "retrieveAutomaticCreditScoreMockedResponseHitlist",
     "soapAction": "retrieveAutomaticCreditScoreMockedResponseHitlist",
     "uri": "retrieveAutomaticCreditScoreMockedResponseHitlist"
+  },
+  {
+    "dummy": "true",
+    "soapname": "retrieveAutomaticCreditScoreMockedResponseSuccessR",
+    "name": "retrieveAutomaticCreditScoreMockedResponseSuccessR",
+    "soapAction": "retrieveAutomaticCreditScoreMockedResponseSuccessR",
+    "uri": "retrieveAutomaticCreditScoreMockedResponseSuccessR"
   },
   {
     "dummy": "true",
