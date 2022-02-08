@@ -1,0 +1,24 @@
+{
+  "personalizations": [
+    {
+      "to": [
+        <#list body.mailSendTo?split(",") as recipient>
+            {
+              "email": "${recipient}"
+            }
+        </#list>
+      ],
+      "subject": "${body.mailSubject}"
+    }
+  ],
+  "from": {
+    "email": "noreply@formsengine.io",
+    "name": "ICMoreHub Alerts"
+  },
+  "content": [
+    {
+      "type": "text/html",
+      "value": "${body.mailContent}"
+    }
+  ]
+}
