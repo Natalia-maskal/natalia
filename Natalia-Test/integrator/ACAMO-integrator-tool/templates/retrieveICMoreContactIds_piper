@@ -1,0 +1,13 @@
+{
+    "pipes": [
+        {
+            "type": "action",
+            "name": "retrieveICMoreContactIds",
+            "script": "headers.handleSoapExceptionTemplate = 'callICMore_error'; headers.handleExceptionTemplate = 'callICMore_error'"
+        },
+        {
+            "type": "transform",
+            "name": "retrieveICMoreContactIds_setVariables"
+        }
+    ]
+}
