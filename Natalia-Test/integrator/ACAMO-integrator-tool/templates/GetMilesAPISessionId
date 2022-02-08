@@ -1,0 +1,5 @@
+{ 
+    "user": "${headers.restConnectorProperties.milesApiIdentification}", 
+    "password": "${headers.restConnectorProperties.milesApiPassword}", 
+    "country": "es"
+}
