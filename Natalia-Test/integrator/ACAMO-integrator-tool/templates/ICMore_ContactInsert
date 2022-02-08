@@ -1,0 +1,73 @@
+<soapenv:Envelope xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/07/secext" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="urn:crmondemand/ws/ecbs/contact/" xmlns:data="urn:/crmondemand/xml/Contact/Data">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1">
+         <wsse:UsernameToken>
+            <wsse:Username>ATHLONCAR/INTEGRATION-ES</wsse:Username>
+            <wsse:Password Type="wsse:PasswordText">Acamo123!@#</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <con:ContactInsert_Input>
+         <data:ListOfContact>
+            <!--Optional:-->
+            <data:Contact operation="ContactUpdate">
+               <data:Id/>
+               <!--Label ICMore: Salutation-->
+               <data:MrMrs>${getSalutationMiles(body.variables.Miles_eventobject.persontitle)}</data:MrMrs>
+               <!--Label ICMore: Upload name-->
+               <data:ExternalSystemId>${body.variables.Miles_eventobject.visitingcountry}_${body.variables.Miles_eventobject.contactid}</data:ExternalSystemId>
+               <!--Label ICMore: Initials-->
+               <data:CustomText3></data:CustomText3>
+               <!--Label ICMore: Firstname :: Required field-->
+               <data:ContactFirstName>${body.variables.Miles_eventobject.firstname}</data:ContactFirstName>
+			<!--Label ICMore: MiddleName -->
+               <data:MiddleName>${body.variables.Miles_eventobject.lastname}</data:MiddleName>
+               <!--Label ICMore: Lastname :: Required field-->
+               <data:ContactLastName>${body.variables.Miles_eventobject.lastname}</data:ContactLastName>
+               <data:AccountName>${body.variables.AccountName}</data:AccountName>
+               <data:Gender>${getGenderMiles(body.variables.Miles_eventobject.sex)}</data:Gender>
+               <data:CustomPickList0/>
+               <!--Labe ICMore Contact type: List<ContactType> Contact, Contact BO -->
+               <data:ContactType>${body.variables.Miles_eventobject.driverstatus}</data:ContactType>
+			<data:IndexedPick1>${body.variables.Miles_eventobject.driverstatus}</data:IndexedPick1>
+               <!--Labe ICMore: Reference nbr -->
+               <data:CustomText30>${body.variables.Miles_eventobject.contactid}</data:CustomText30>
+               <!--Label ICMore: JobTitle -->
+               <data:JobTitle></data:JobTitle>
+               <!--Label ICMore Birthday (annotation dd-mm-yyyy -->
+               <data:DateofBirth></data:DateofBirth>
+               <!--Label ICMore Status: List<Status> Value: Active, Inactive, Draft-->
+               <data:CustomPickList1></data:CustomPickList1>
+			<!-- Athlon Entity -->
+               <data:IndexedPick0/>
+                <!--Team identifier:-->
+               <data:CustomPickList5/>
+               <!--Changed attachment link:-->
+               <data:CustomBoolean7/>
+               <data:ContactEmail/>
+               <data:AccountIntegrationId/>
+               <data:IntegrationId/>
+               <data:AccountId>${body.variables.AccountId}</data:AccountId>
+               <data:AccountName>${body.variables.AccountName}</data:AccountName>
+			 <!--Private address ICMore-->
+               <data:AlternateCountry>${body.variables.Miles_eventobject.visitingcountry}</data:AlternateCountry>
+               <data:AlternateAddressLine1>${body.variables.Miles_eventobject.addressline1}</data:AlternateAddressLine1>
+               <data:AlternateCity>${body.variables.Miles_eventobject.visitingcity}</data:AlternateCity>
+               <data:AlternateZipCode>${body.variables.Miles_eventobject.postalcode}</data:AlternateZipCode>
+               <data:AlternateProvince>${body.variables.Miles_eventobject.visitingstate}</data:AlternateProvince>
+               <!-- Additional contact information -->
+               <data:WorkPhone>${body.variables.Miles_eventobject.phonenr}</data:WorkPhone>
+               <!--Optional:-->
+               <data:WorkFax/>
+               <!--Optional:-->
+               <data:HomePhone></data:HomePhone>
+               <!--Optional:-->
+               <data:CellularPhone></data:CellularPhone>
+               <data:ContactFullName>${body.variables.Miles_eventobject.firstname} ${body.variables.Miles_eventobject.contactid}</data:ContactFullName>
+               <data:CustomPickList2/>                  
+            </data:Contact>
+         </data:ListOfContact>
+    	</con:ContactInsert_Input>
+   </soapenv:Body>
+</soapenv:Envelope>
