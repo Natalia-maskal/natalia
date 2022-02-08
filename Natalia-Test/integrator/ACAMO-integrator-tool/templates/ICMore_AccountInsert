@@ -1,0 +1,84 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/07/secext"
+  xmlns:acc="urn:crmondemand/ws/ecbs/account/"
+  xmlns:data="urn:/crmondemand/xml/Account/Data">
+  <soapenv:Header>
+    <wsse:Security soapenv:mustUnderstand="1">
+      <wsse:UsernameToken>
+        <wsse:Username>${headers.soapConnectorProperties.icMoreUsername}</wsse:Username>
+        <wsse:Password Type="wsse:PasswordText">${headers.soapConnectorProperties.icMorePassword}</wsse:Password>
+      </wsse:UsernameToken>
+    </wsse:Security>
+  </soapenv:Header>
+  <soapenv:Body>
+    <acc:AccountInsert_Input>
+      <data:ListOfAccount lastpage="1" recordcount="1">
+        <!--Zero or more repetitions:-->
+        <data:Account operation="AccountInsert">
+          <!-- Account Id -->
+               <data:Id/>
+               <!--Search Name-->
+               <data:AccountName>${body.variables.Miles_eventobject.legalname}</data:AccountName>
+               <!--Billing Name-->
+               <data:CustomText1>${body.variables.Miles_eventobject.tradingname}</data:CustomText1>
+               <!--Legal form-->
+               <data:CustomPickList0>${getICMoreLegalFormMapping(body.variables.Miles_eventobject.tradingname)}</data:CustomPickList0>
+               <!--Backoffice application ID-->
+               <data:ExternalSystemId>${body.variables.Miles_eventobject.primarycontact.visitingaddress.country}_${body.variables.Miles_eventobject.partnerid}</data:ExternalSystemId>
+               <!--Reference nbr-->
+               <data:CustomText33>${body.variables.Miles_eventobject.partnerid}</data:CustomText33>
+               <!--CReference nbr-->
+               <data:IndexedShortText0>${body.variables.Miles_eventobject.partnerid}</data:IndexedShortText0>
+               <!--Type-->
+               <data:AccountType>${getMilesAccountStatus(body.variables.Miles_eventobject.isProspect)}</data:AccountType>
+               <!--Enterprise nbr-->
+               <data:CustomText32>${body.variables.Miles_eventobject.partnerid}</data:CustomText32>
+               <!--VAT nbr-->
+               <data:CustomText31>${body.variables.Miles_eventobject.vatnumber}</data:CustomText31>
+               <!--Visiting Country-->
+               <data:PrimaryShipToCountry>${body.variables.Miles_eventobject.primarycontact.visitingaddress.country}</data:PrimaryShipToCountry>
+               <!--Visiting address-->
+               <data:PrimaryShipToStreetAddress>${body.variables.Miles_eventobject.primarycontact.visitingaddress.line1}</data:PrimaryShipToStreetAddress>
+               <!--Visiting address 2-->
+               <data:PrimaryShipToStreetAddress2>${body.variables.Miles_eventobject.primarycontact.visitingaddress.line2}</data:PrimaryShipToStreetAddress2>
+               <!--Visiting Postal Code-->
+               <data:PrimaryShipToPostalCode>${body.variables.Miles_eventobject.primarycontact.visitingaddress.postalcode}</data:PrimaryShipToPostalCode>
+               <!--Visiting City-->
+               <data:PrimaryShipToCity>${body.variables.Miles_eventobject.primarycontact.visitingaddress.city}</data:PrimaryShipToCity>
+               <!--Visiting Province-->
+               <data:PrimaryShipToProvince>${body.variables.Miles_eventobject.primarycontact.visitingaddress.state}</data:PrimaryShipToProvince>
+               <!--Main Fax-->
+               <data:MainFax/>
+               <!--Mailing address Country-->
+               <data:PrimaryBillToCountry>${body.variables.Miles_eventobject.primarycontact.primaryaddress.country}</data:PrimaryBillToCountry>
+               <!--Mailing Address-->
+               <data:PrimaryBillToStreetAddress>${body.variables.Miles_eventobject.primarycontact.primaryaddress.line1}</data:PrimaryBillToStreetAddress>
+               <!--Mailing Address - line2-->
+               <data:PrimaryBillToStreetAddress2>${body.variables.Miles_eventobject.primarycontact.primaryaddress.line2}</data:PrimaryBillToStreetAddress2>
+               <!--Mailing City-->
+               <data:PrimaryBillToCity>${body.variables.Miles_eventobject.primarycontact.primaryaddress.city}</data:PrimaryBillToCity>
+               <!--Mailing Postal-->
+               <data:PrimaryBillToPostalCode>${body.variables.Miles_eventobject.primarycontact.primaryaddress.postalcode}</data:PrimaryBillToPostalCode>
+               <!--Mailing Province-->
+               <data:PrimaryBillToProvince>${body.variables.Miles_eventobject.primarycontact.primaryaddress.state}</data:PrimaryBillToProvince>
+               <!--Main email address-->
+               <data:CustomText34>${body.variables.Miles_eventobject.primarycontact.email}</data:CustomText34>
+               <!--Parent Account-->
+               <data:ParentAccount/>
+               <!--Main phone-->
+               <data:MainPhone>${body.variables.Miles_eventobject.primarycontact.primaryphone.localnr}</data:MainPhone>
+               <!--Credit limit (€)-->
+               <data:CustomCurrency0/>
+               <!--Credit end date-->
+               <data:CustomDate25/>
+               <!--Primary Contact-->
+               <data:PrimaryContactFullName/>
+               <!--Primary Contact ID-->
+               <data:PrimaryContactId/>
+               <!--Owner-->
+               <!-- <data:Owner></data:Owner>-->
+            </data:Account>
+         </data:ListOfAccount>
+      </acc:AccountInsert_Input>
+   </soapenv:Body>
+</soapenv:Envelope>
