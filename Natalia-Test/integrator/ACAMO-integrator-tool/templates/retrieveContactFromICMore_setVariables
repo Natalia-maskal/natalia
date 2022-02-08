@@ -1,0 +1,12 @@
+<#assign ListOfContact = body.ContactQueryPage_Output.ListOfContact />
+<#assign contactExist = ListOfContact?has_content />
+{
+    "status": "true",
+    "processVariables": {
+        <#if contactExist>
+        "ICMoreContactId": "${ListOfContact.Contact.Id}",
+        "AccountName" : "${ListOfContact.Contact.AccountName}",
+        </#if>
+        "isNewContact": ${contactExist?string('false', 'true')}
+    }
+}
