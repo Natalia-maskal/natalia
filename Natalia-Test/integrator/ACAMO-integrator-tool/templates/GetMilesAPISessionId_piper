@@ -1,0 +1,13 @@
+{
+    "pipes": [
+        {
+            "type": "action",
+            "name": "GetMilesAPISessionId",
+            "script": "headers.handleRestExceptionTemplate = 'callMiles_error'; headers.handleExceptionTemplate = 'callMiles_error'"
+        },
+        {
+            "type": "transform",
+            "name": "GetMilesAPISessionId_setVariables"
+        }
+    ]
+}
