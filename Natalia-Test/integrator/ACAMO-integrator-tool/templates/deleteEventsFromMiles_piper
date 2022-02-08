@@ -1,0 +1,9 @@
+{
+    "pipes": [
+        {
+            "type": "action",
+            "name": "deleteEventsFromMiles",
+            "script": "headers.handleRestExceptionTemplate = 'callMiles_error'; headers.handleExceptionTemplate = 'callMiles_error'"
+        }
+    ]
+}
