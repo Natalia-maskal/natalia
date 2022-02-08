@@ -1,0 +1,10 @@
+<#if body.errorOccured??>
+    <@printObjectToJson source=body /> 
+<#else>
+    <#assign contact = body.ContactQueryPage_Output.ListOfContact.Contact>
+    
+    {
+        "status" : "true",
+        "processVariables" : <@addPrefixToParams contact "CONTACT_" />
+    }
+</#if>
