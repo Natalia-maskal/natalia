@@ -1,0 +1,9 @@
+<#if body.errorOccured??>
+    <@printObjectToJson source=body /> 
+<#else>
+    <#assign account = body.AccountQueryPage_Output.ListOfAccount.Account>
+    {
+        "status" : "true",
+        "processVariables" : <@addPrefixToParams account "ACCOUNT_" />
+    }
+</#if>
