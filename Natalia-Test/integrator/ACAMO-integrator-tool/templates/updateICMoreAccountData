@@ -1,0 +1,32 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/07/secext"
+  xmlns:acc="urn:crmondemand/ws/ecbs/account/"
+  xmlns:data="urn:/crmondemand/xml/Account/Data">
+  <soapenv:Header>
+    <wsse:Security soapenv:mustUnderstand="1">
+      <wsse:UsernameToken>
+        <wsse:Username>${getICMoreUserName(body.variables.queuename)}</wsse:Username>
+        <wsse:Password Type="wsse:PasswordText">${getICMorePassword(body.variables.queuename)}</wsse:Password>
+      </wsse:UsernameToken>
+    </wsse:Security>
+  </soapenv:Header>
+  <soapenv:Body>
+    <acc:AccountUpdate_Input>
+      <data:ListOfAccount lastpage="1" recordcount="1">
+        <!--Zero or more repetitions:-->
+        <data:Account operation="AccountUpdate">
+          <!-- Account Id -->
+          <data:Id>${body.variables.ACCOUNT_Id}</data:Id>
+          <!-- Account ExternalSystemId -->
+          <data:ExternalSystemId>${body.variables.ACCOUNT_ExternalSystemId}${body.variables.MILES_partnerId}</data:ExternalSystemId>
+          <!-- Account CustomText33 -->
+          <data:CustomText33>${body.variables.MILES_partnerId}</data:CustomText33>
+          <!-- Account IndexedShortText0 -->
+          <data:IndexedShortText0>${body.variables.MILES_partnerId}</data:IndexedShortText0>
+          <!-- TODO: needs a correct mapping to field isProspect -->
+          <data:AccountType>${getMilesAccountStatus(body.variables.MILES_isProspect)}</data:AccountType>
+        </data:Account>
+      </data:ListOfAccount>
+    </acc:AccountUpdate_Input>
+  </soapenv:Body>
+</soapenv:Envelope>
