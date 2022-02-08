@@ -1,0 +1,13 @@
+{
+    "pipes": [
+        {
+            "type": "action",
+            "name": "${body.variables.TaskAction}TaskICMore",
+            "script": "headers.handleSoapExceptionTemplate = 'callICMore_error'; headers.handleExceptionTemplate = 'callICMore_error'"
+        },
+        {
+            "type": "transform",
+            "name": "handleTaskICMore_setVariables"
+        }
+    ]
+}
