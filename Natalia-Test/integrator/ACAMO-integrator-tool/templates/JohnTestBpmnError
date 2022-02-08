@@ -1,0 +1,8 @@
+{
+    "errorOccured": "true",
+    "bpmnError": {
+        "bpmnErrorCode": "ICMoreCallFailedError",
+        "bpmnErrorMessage": "SOAP-ENV:ServerMultiple matches found for instance of integration component 'Account' using search specification '[External System Id] = \"Spain_510452\"' in the business component 'Account', based on user key ' User Key:2'.(SBL-EAI-04390)OnDemandServicesObjMgr_enu_186737.log(SBL-EAI-04390)IDS_ERR_EAI_SA_MULTIPLE_MATCHMultiple matches found for instance of integration component 'Account' using search specification '[External System Id] = \"Spain_510452\"' in the business component 'Account', based on user key ' User Key:2'.(SBL-EAI-04390)"
+    },
+    "status": "true"
+}
