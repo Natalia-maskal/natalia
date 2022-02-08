@@ -1,0 +1,13 @@
+{
+    "pipes": [
+        {
+            "type": "action",
+            "name": "retrieveAccountFromICMore",
+            "script": "headers.handleSoapExceptionTemplate = 'callICMore_error'; headers.handleExceptionTemplate = 'callICMore_error'"
+        },
+        {
+            "type": "transform",
+            "name": "retrieveAccountFromICMore_setVariables"
+        }
+    ]
+}
