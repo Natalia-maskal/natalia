@@ -1,0 +1,22 @@
+<#if body.errorOccured??>
+    <@printObjectToJson source=body />
+<#else>
+    <#if body.MWSContact??>
+        <#assign MWSContact = body.MWSContact />
+        {
+            "status" : "true",
+            "processVariables" : {
+                "MWSContactId": <#if MWSContact.id?is_string>"${MWSContact.id?json_string}"<#else>""</#if> 
+            }
+        }
+    <#else>
+        {
+            "errorOccured": "true",
+            "status": "true",
+            "bpmnError": {
+                "bpmnErrorCode": "MilesEmptyBodyError",
+                "bpmnErrorMessage": "Can't create new MWSContact please check integrator template"
+            }
+        }
+    </#if>
+</#if>
