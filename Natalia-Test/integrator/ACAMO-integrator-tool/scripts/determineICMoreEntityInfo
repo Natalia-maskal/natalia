@@ -1,0 +1,83 @@
+def icmoreEntities = [
+  "Netherlands": [
+    lessorID: "NLACL",
+    groupConsolidation: "true",
+    country: "NL"
+  ],
+  "Mercedes NL": [
+    lessorID: "NLMBL",
+    groupConsolidation: "true",
+    country: "NL"
+  ],
+  "Special lease": [
+    lessorID: "NLSLS",
+    groupConsolidation: "true",
+    country: "NL"
+  ],
+  "Spain": [
+    lessorID: "ESACL",
+    groupConsolidation: "false",
+    country: "ES"
+  ],
+  "Italy": [
+    lessorID: "ITACL",
+    groupConsolidation: "false",
+    country: "IT"
+  ],
+  "France": [
+    lessorID: "FRACL",
+    groupConsolidation: "false",
+    country: "FR"
+  ],
+  "Mobifleet": [
+    lessorID: "FRMFL",
+    groupConsolidation: "false",
+    country: "FR"
+  ],
+  "UCAR": [
+    lessorID: "FRUCAR",
+    groupConsolidation: "false",
+    country: "FR"
+  ],
+  "Belgium": [
+    lessorID: "BEACL",
+    groupConsolidation: "false",
+    country: "BE"
+  ],
+  "Premium lease": [
+    lessorID: "BEPRL",
+    groupConsolidation: "false",
+    country: "BE"
+  ],
+  "Poland": [
+    lessorID: "PLACL",
+    groupConsolidation: "false",
+    biPayment: "false",
+    cpScoring: "false",
+    country: "PL"
+  ],
+  "Luxembourg": [
+    lessorID: "LUACL",
+    groupConsolidation: "false",
+    biPayment: "true",
+    cpScoring: "false",
+    country: "LU"
+  ],
+  "Sweden": [
+    lessorID: "SEACL",
+    groupConsolidation: "false",
+    biPayment: "false",
+    cpScoring: "false",
+    country: "SE"
+  ],
+  "United Kingdom": [
+    lessorID: "UKACL",
+    groupConsolidation: "false",
+    biPayment: "false",
+    cpScoring: "false",
+    country: "UK"
+  ]
+];
+body.icmoreEntityInfo = icmoreEntities[body.variables.ACCOUNT_IndexedPick0];
+
+return body;
