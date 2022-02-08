@@ -1,0 +1,23 @@
+<#if body.errorOccured??>
+    <@printObjectToJson source=body /> 
+<#else>
+    <#if body.MWSBusinessPartner??>
+        <#assign MWSBusinessPartner = body.MWSBusinessPartner.MWSBusinessUnit />
+        {
+            "status" : "true",
+            "processVariables" : {
+                "MWSBusinessPartner_unitId": <#if MWSBusinessPartner.id?is_string>"${MWSBusinessPartner.id?json_string}"<#else>""</#if>
+            }
+        }
+    <#else>
+        {
+            "errorOccured": "true",
+            "status": "true",
+            "bpmnError": {
+                "bpmnErrorCode": "MilesEmptyBodyError",
+                "bpmnErrorMessage": "Can't retrieve Miles unitId please check integrator template"
+            }
+        }
+    </#if>
+    
+</#if>
