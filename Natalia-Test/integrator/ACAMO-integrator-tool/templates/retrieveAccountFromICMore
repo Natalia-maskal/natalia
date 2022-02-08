@@ -1,0 +1,82 @@
+<#assign eventobject = body.variables.Miles_eventobject />
+<soapenv:Envelope xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/07/secext" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:acc="urn:crmondemand/ws/ecbs/account/" xmlns:quer="urn:/crmondemand/xml/Account/Query">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1">
+         <wsse:UsernameToken>
+            <wsse:Username>${headers.soapConnectorProperties.icMoreUsername}</wsse:Username>
+            <wsse:Password Type="wsse:PasswordText">${headers.soapConnectorProperties.icMorePassword}</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <acc:AccountQueryPage_Input>
+         <quer:ListOfAccount pagesize="50" startrownum="0" recordcountneeded="true">
+            <!--Optional:-->
+            <quer:Account>
+               <!--Account id-->
+               <quer:Id/>
+               <!--Search Name-->
+               <quer:AccountName/>
+               <!--Billing Name-->
+               <quer:CustomText1/>
+               <!--Legal form-->
+               <quer:CustomPickList0/>
+               <!--Backoffice application ID-->
+               <quer:ExternalSystemId>='${getCountryQueue(body.variables.Miles_country)}_${eventobject.businesspartnerid}'</quer:ExternalSystemId>
+               <!--Reference nbr-->
+               <quer:CustomText33/>
+               <!--CReference nbr-->
+               <quer:IndexedShortText0/>
+               <!--Type-->
+               <quer:AccountType/>
+               <!--Enterprise nbr-->
+               <quer:CustomText32/>
+               <!--VAT nbr-->
+               <quer:CustomText31/>
+               <!--Visiting Country-->
+               <quer:PrimaryShipToCountry/>
+               <!--Visiting address-->
+               <quer:PrimaryShipToStreetAddress/>
+               <!--Visiting address 2-->
+               <quer:PrimaryShipToStreetAddress2/>
+               <!--Visiting Postal Code-->
+               <quer:PrimaryShipToPostalCode/>
+               <!--Visiting City-->
+               <quer:PrimaryShipToCity/>
+               <!--Visiting Province-->
+               <quer:PrimaryShipToProvince/>
+               <!--Main Fax-->
+               <quer:MainFax/>
+               <!--Mailing address Country-->
+               <quer:PrimaryBillToCountry/>
+               <!--Mailing Address-->
+               <quer:PrimaryBillToStreetAddress/>
+               <!--Mailing Address - line2-->
+               <quer:PrimaryBillToStreetAddress2/>
+               <!--Mailing City-->
+               <quer:PrimaryBillToCity/>
+               <!--Mailing Postal-->
+               <quer:PrimaryBillToPostalCode/>
+               <!--Mailing Province-->
+               <quer:PrimaryBillToProvince/>
+               <!--Main email address-->
+               <quer:CustomText34/>
+               <!--Parent Account-->
+               <quer:ParentAccount/>
+               <!--Main phone-->
+               <quer:MainPhone/>
+               <!--Credit limit (€)-->
+               <quer:CustomCurrency0/>
+               <!--Credit end date-->
+               <quer:CustomDate25/>
+               <!--Primary Contact-->
+               <quer:PrimaryContactFullName/>
+               <!--Primary Contact ID-->
+               <quer:PrimaryContactId/>
+               <!--Owner-->
+               <quer:Owner/>
+            </quer:Account>
+         </quer:ListOfAccount>
+      </acc:AccountQueryPage_Input>
+   </soapenv:Body>
+</soapenv:Envelope>
