@@ -1,0 +1,13 @@
+{
+    "pipes": [
+        {
+            "type": "action",
+            "name": "ICMore_AccountUpdate",
+            "script": "headers.handleSoapExceptionTemplate = 'callICMore_error'; headers.handleExceptionTemplate = 'callICMore_error'"
+        },
+        {
+            "type": "transform",
+            "name": "ICMore_AccountUpdate_setVariables"
+        }
+    ]
+}
