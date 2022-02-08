@@ -1,0 +1,39 @@
+<#ftl strip_whitespace=false />
+<#assign aDateTime = .now>
+
+<soapenv:Envelope xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/07/secext" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:act="urn:crmondemand/ws/ecbs/activity/" xmlns:data="urn:/crmondemand/xml/Activity/Data">
+   <soapenv:Header>
+    	<wsse:Security soapenv:mustUnderstand="1">
+    		<wsse:UsernameToken>
+                <wsse:Username>${headers.soapConnectorProperties.icMoreUsername}</wsse:Username>
+                <wsse:Password Type="wsse:PasswordText">${headers.soapConnectorProperties.icMorePassword}</wsse:Password>
+            </wsse:UsernameToken>
+    	</wsse:Security>
+    </soapenv:Header>
+   <soapenv:Body>
+      <act:ActivityInsert_Input>
+         <data:ListOfActivity lastpage="?" recordcount="?">
+            <!--Zero or more repetitions:-->
+            <data:Activity operation="ActivityInsert">
+                <data:ExternalSystemId></data:ExternalSystemId>
+                <data:DueDate>${aDateTime?date?iso_utc}</data:DueDate>
+                <data:Description>${getTaskDescription(body)}</data:Description>
+                <data:Subject>${getTaskSubject(body)}</data:Subject>
+                <data:Activity>Task</data:Activity>
+                <data:CustomPickList0>Farming</data:CustomPickList0>
+                <data:Status>Assigned</data:Status>
+                <data:Priority>1-High</data:Priority>
+                <data:CustomPickList2></data:CustomPickList2>
+                <data:Type>Call</data:Type>
+                <data:AssignedTo>Owner</data:AssignedTo>
+                <#list body.variables?keys as variableName>
+                    <#if variableName?starts_with("SET_")>
+                        <#assign tagName = variableName?split("_")[1]>
+                        <data:${tagName}>${body.variables[variableName]}</data:${tagName}>
+                    </#if>
+                </#list>
+            </data:Activity>
+         </data:ListOfActivity>
+      </act:ActivityInsert_Input>
+   </soapenv:Body>
+</soapenv:Envelope>
