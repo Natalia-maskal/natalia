@@ -1,0 +1,6 @@
+{ 
+    "status": "false",
+    "processVariables" : {
+        "continueProcess": "false"
+    }
+}
