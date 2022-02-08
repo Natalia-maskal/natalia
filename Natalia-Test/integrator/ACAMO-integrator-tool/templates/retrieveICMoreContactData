@@ -1,0 +1,73 @@
+<soapenv:Envelope xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/07/secext" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="urn:crmondemand/ws/ecbs/contact/" xmlns:quer="urn:/crmondemand/xml/Contact/Query">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1">
+         <wsse:UsernameToken>
+            <wsse:Username>${getICMoreUserName(body.variables.queuename)}</wsse:Username>
+            <wsse:Password Type="wsse:PasswordText">${getICMorePassword(body.variables.queuename)}</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <con:ContactQueryPage_Input>
+         <quer:ListOfContact>
+            <!--Optional:-->
+            <quer:Contact operation="ContactQueryPage">
+               <quer:Id>='${body.variables.ContactId}'</quer:Id>
+               <!--Label ICMore: Salutation-->
+               <quer:MrMrs/>
+               <!--Label ICMore: Upload name-->
+               <quer:ExternalSystemId/>
+               <!--Label ICMore: Initials-->
+               <quer:CustomText3/>
+               <!--Label ICMore: Firstname :: Required field-->
+               <quer:ContactFirstName/>
+			<!--Label ICMore: MiddleName -->
+               <quer:MiddleName/>
+               <!--Label ICMore: Lastname :: Required field-->
+               <quer:ContactLastName/>
+               <quer:AccountName/>
+               <quer:Gender/>
+               <quer:CustomPickList0/>
+               <!--Labe ICMore Contact type: List<ContactType> Contact, Contact BO -->
+               <quer:ContactType/>
+			<quer:IndexedPick1/>
+               <!--Labe ICMore: Reference nbr -->
+               <quer:CustomText30/>
+               <!--Label ICMore: JobTitle -->
+               <quer:JobTitle/>
+               <!--Label ICMore Birthday (annotation dd-mm-yyyy -->
+               <quer:DateofBirth/>
+               <!--Label ICMore Status: List<Status> Value: Active, Inactive, Draft-->
+               <quer:CustomPickList1/>
+			<!-- Athlon Entity -->
+               <quer:IndexedPick0/>
+                <!--Team identifier:-->
+               <quer:CustomPickList5/>
+               <!--Changed attachment link:-->
+               <quer:CustomBoolean7/>
+               <quer:ContactEmail/>
+               <quer:AccountIntegrationId/>
+               <quer:IntegrationId/>
+               <quer:AccountId/>
+			 <!--Private address ICMore-->
+               <quer:AlternateCountry/>
+               <quer:AlternateAddressLine1/>
+               <quer:AlternateCity/>
+               <quer:AlternateZipCode/>
+               <quer:AlternateStateProvince/>
+               <quer:AlternateProvince/>
+               <!-- Additional contact information -->
+               <quer:WorkPhone/>
+               <!--Optional:-->
+               <quer:WorkFax/>
+               <!--Optional:-->
+               <quer:HomePhone/>
+               <!--Optional:-->
+               <quer:CellularPhone/>
+               <quer:ContactFullName/>
+               <quer:CustomPickList2/>                  
+            </quer:Contact>
+         </quer:ListOfContact>
+    	</con:ContactQueryPage_Input>
+   </soapenv:Body>
+</soapenv:Envelope>
