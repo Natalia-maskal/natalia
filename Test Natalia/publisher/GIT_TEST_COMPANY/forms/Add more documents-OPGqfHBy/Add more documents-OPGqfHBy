@@ -7,7 +7,7 @@
   "version": "0.01",
   "theme": "3006",
   "themeViewUri": "",
-  "serviceUri": "test_srvice-_uri",
+  "serviceUri": "test1_srvice-_uri",
   "servicePackageId": "test_package_id",
   "serviceTemplateName": "PrefillTemplate123",
   "prefillServiceTemplateName": "servie_template_name_test",
