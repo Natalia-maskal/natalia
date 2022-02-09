@@ -1,0 +1,1066 @@
+{
+  "hash": "SCA",
+  "name": "Start credit assessment process",
+  "description": "",
+  "tags": "",
+  "company": "741",
+  "version": "0.02",
+  "theme": "1139",
+  "themeViewUri": "",
+  "serviceUri": "",
+  "servicePackageId": "",
+  "serviceTemplateName": "startProcess_piper",
+  "prefillServiceTemplateName": "",
+  "jsDependencies": "[]",
+  "data": {
+    "id": 282074,
+    "type": "questionnaire",
+    "name": "Start credit assessment process",
+    "description": "",
+    "successContent": {
+      "NL": ""
+    },
+    "errorContent": {
+      "NL": ""
+    },
+    "submitUrl": "/processes",
+    "submitErrorUrl": "",
+    "tags": "",
+    "backButton": {
+      "NL": ""
+    },
+    "nextButton": {
+      "NL": ""
+    },
+    "submitButton": {
+      "NL": ""
+    },
+    "locales": "NL",
+    "defLocale": "NL",
+    "company": "Athlon risk assessment",
+    "user": "ATL_Roman",
+    "publishDate": "03-02-2022 04:40:34",
+    "publishVersion": "0.02",
+    "pages": [
+      {
+        "id": 495810,
+        "type": "section",
+        "label": {
+          "NL": "Process details"
+        },
+        "description": "",
+        "name": "process_details",
+        "elementId": "",
+        "className": "",
+        "condScript": "",
+        "condJson": "",
+        "tags": "",
+        "backButton": {
+          "NL": ""
+        },
+        "nextButton": {
+          "NL": ""
+        },
+        "submitButton": {
+          "NL": ""
+        },
+        "submitUrl": "",
+        "submitErrorUrl": "",
+        "pageUrl": "",
+        "questions": [
+          {
+            "id": 495811,
+            "type": "question",
+            "label": {
+              "NL": "Workflow namespace"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "workflow_namespace",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "hidden",
+            "validScript": "",
+            "elementId": "",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495812,
+            "type": "question",
+            "label": {
+              "NL": "Process type"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "process_type",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "dropdown",
+            "validScript": "",
+            "elementId": "processType",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [
+              {
+                "args": "",
+                "script": "if (!value || value == '') { return [ERR_EMPTY:\"This field is mandatory\"] }"
+              }
+            ],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": [
+              {
+                "id": 495813,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Prospect"
+                },
+                "description": "",
+                "name": "prospect",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "prospect",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495814,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Change credit line"
+                },
+                "description": "",
+                "name": "change_credit_line",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "extendedCreditLine",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495815,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Yearly revision"
+                },
+                "description": "",
+                "name": "yearly_revision",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "yearlyRevision",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              }
+            ]
+          },
+          {
+            "id": 495816,
+            "type": "question",
+            "label": {
+              "NL": "Country"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "country",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "dropdown",
+            "validScript": "",
+            "elementId": "country",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [
+              {
+                "args": "",
+                "script": "if (!value || value == '') { return [ERR_EMPTY:\"This field is mandatory\"] }"
+              }
+            ],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": [
+              {
+                "id": 495817,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Netherlands"
+                },
+                "description": "",
+                "name": "NL",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "netherlands",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495818,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Belgium"
+                },
+                "description": "",
+                "name": "BE",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "belgium",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495819,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Germany"
+                },
+                "description": "",
+                "name": "GE",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "germany",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              }
+            ]
+          },
+          {
+            "id": 495820,
+            "type": "question",
+            "label": {
+              "NL": "Segment"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "segment",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "dropdown",
+            "validScript": "",
+            "elementId": "segment",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": [
+              {
+                "id": 495821,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Athlon B2B"
+                },
+                "description": "",
+                "name": "athlon_b2b",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "athlonB2B",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495822,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Athlon B2C"
+                },
+                "description": "",
+                "name": "athlon_b2c",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "athlonB2C",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495823,
+                "type": "answeroption",
+                "label": {
+                  "NL": "LeasePlan B2B"
+                },
+                "description": "",
+                "name": "leaseplan_b2b",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "leasePlanB2B",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              }
+            ]
+          },
+          {
+            "id": 495824,
+            "type": "question",
+            "label": {
+              "NL": "Sales channel"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "sales_channel",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "dropdown",
+            "validScript": "",
+            "elementId": "salesChannel",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": [
+              {
+                "id": 495825,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Key Accounts"
+                },
+                "description": "",
+                "name": "key_accounts",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "keyAccounts",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              }
+            ]
+          },
+          {
+            "id": 495826,
+            "type": "question",
+            "label": {
+              "NL": "Environment"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "environment",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "dropdown",
+            "validScript": "",
+            "elementId": "environment",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": [
+              {
+                "id": 495827,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Test"
+                },
+                "description": "",
+                "name": "test",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "test",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 495828,
+        "type": "section",
+        "label": {
+          "NL": "Credit assessment"
+        },
+        "description": "",
+        "name": "credit_assessment",
+        "elementId": "",
+        "className": "",
+        "condScript": "",
+        "condJson": "",
+        "tags": "",
+        "backButton": {
+          "NL": ""
+        },
+        "nextButton": {
+          "NL": ""
+        },
+        "submitButton": {
+          "NL": ""
+        },
+        "submitUrl": "",
+        "submitErrorUrl": "",
+        "pageUrl": "",
+        "questions": [
+          {
+            "id": 495829,
+            "type": "question",
+            "label": {
+              "NL": "Required credit line"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "required_credit_line",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "textfield",
+            "validScript": "def intValue = value.toFloat()\r\n\r\nif (intValue > 500000) { return [ERR_CREDIT_MORE_500K:\"The requested credit line exceeds 500.000 euro. Please follow the CRC process.\"] }",
+            "elementId": "requiredCreditLine",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": {
+              "rule": "999999999999,99",
+              "options": "{\"currency\": \"€\", \"placement\": \"before\"}"
+            },
+            "validations": [
+              {
+                "args": "",
+                "script": "if (!value || value == '') { return [ERR_EMPTY:\"This field is mandatory\"] }"
+              }
+            ],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495830,
+            "type": "question",
+            "label": {
+              "NL": "Relation id"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "relation_id",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "dropdown",
+            "validScript": "",
+            "elementId": "relationId",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [
+              {
+                "args": "",
+                "script": "if (!value || value == '') { return [ERR_EMPTY:\"This field is mandatory\"] }"
+              }
+            ],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": [
+              {
+                "id": 495831,
+                "type": "answeroption",
+                "label": {
+                  "NL": "560b5f1c-1b09-4bcc-b5ad-0415874e0886"
+                },
+                "description": "",
+                "name": "560b5f1c_1b09_4bcc_b5ad_0415874e0886",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495832,
+                "type": "answeroption",
+                "label": {
+                  "NL": "1b231bc6-b964-44b0-9acc-d4e556faa3ce"
+                },
+                "description": "",
+                "name": "1b231bc6_b964_44b0_9acc_d4e556faa3ce",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495833,
+                "type": "answeroption",
+                "label": {
+                  "NL": "d9ce2d9b-435c-473d-8897-7c03ecfce744"
+                },
+                "description": "",
+                "name": "d9ce2d9b_435c_473d_8897_7c03ecfce744",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495834,
+                "type": "answeroption",
+                "label": {
+                  "NL": "7fbedc95-dfa5-4c50-b8e6-9397bb8de246"
+                },
+                "description": "",
+                "name": "7fbedc95_dfa5_4c50_b8e6_9397bb8de246",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495835,
+                "type": "answeroption",
+                "label": {
+                  "NL": "414368e3-c047-4d22-a93c-b817c69f93ac"
+                },
+                "description": "",
+                "name": "414368e3_c047_4d22_a93c_b817c69f93ac",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495836,
+                "type": "answeroption",
+                "label": {
+                  "NL": "caa5f4a5-da3e-4c7a-896a-4bc28754e160"
+                },
+                "description": "",
+                "name": "caa5f4a5_da3e_4c7a_896a_4bc28754e160",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495837,
+                "type": "answeroption",
+                "label": {
+                  "NL": "90412eb4-2a8d-4993-8450-b3f2e006624b"
+                },
+                "description": "",
+                "name": "90412eb4_2a8d_4993_8450_b3f2e006624b",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495838,
+                "type": "answeroption",
+                "label": {
+                  "NL": "WrongClientID"
+                },
+                "description": "",
+                "name": "wrongclientid",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              }
+            ]
+          },
+          {
+            "id": 495839,
+            "type": "question",
+            "label": {
+              "NL": "Company identifier"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "company_identifier",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "textfield",
+            "validScript": "",
+            "elementId": "company_identifier",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [
+              {
+                "args": "",
+                "script": "if (!value || value == '') { return [ERR_EMPTY:\"This field is mandatory\"] }"
+              }
+            ],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495840,
+            "type": "question",
+            "label": {
+              "NL": "Company name"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "company_name",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "textfield",
+            "validScript": "",
+            "elementId": "companyName",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [
+              {
+                "args": "",
+                "script": "if (!value || value == '') { return [ERR_EMPTY:\"This field is mandatory\"] }"
+              }
+            ],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495841,
+            "type": "question",
+            "label": {
+              "NL": "Documents"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "documents",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "repeatupload",
+            "validScript": "",
+            "elementId": "documents1",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          }
+        ]
+      }
+    ],
+    "version": 0,
+    "token": "nalZ2arq"
+  }
+}
