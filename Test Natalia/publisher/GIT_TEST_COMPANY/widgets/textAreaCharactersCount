@@ -1,0 +1,37 @@
+<p id='{{ widget.variables.counterId }}'></p>
+
+<style>
+    #{{ widget.variables.counterId }} {
+        font-size: 12px;
+        padding-bottom: 1.25em;
+        text-align: right;
+        margin-top: -20px;
+    }
+</style>
+
+<script>
+    var maxLength = {{ widget.variables.maxLength }};
+    var textArea = jQuery('#{{ widget.variables.textareaId }}').find('textarea');
+    textArea.attr('maxlength', maxLength);
+    var currentNumber = textArea.val().length;
+    var countLabel = jQuery('#{{ widget.variables.counterId }}');
+    
+    setCountLableContent(currentNumber, countLabel);
+
+    textArea.on("input", function(event) {
+        var currentLength = event.target.value.length;
+        if (currentLength >= maxLength) {
+            var newValue = event.target.value.substring(0, maxLength);
+            FE.setAnswer({
+            questionName: '{{ widget.variables.questionName }}',
+            answer: newValue
+        });
+            event.target.value = newValue;
+        }
+        setCountLableContent(event.target.value.length, countLabel);
+    });
+    
+    function setCountLableContent(currentNumber, label) {
+        label.html(currentNumber + '/' + maxLength);
+    }
+</script>
