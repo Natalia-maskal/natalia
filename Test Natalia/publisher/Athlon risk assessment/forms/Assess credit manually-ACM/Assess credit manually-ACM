@@ -1,0 +1,2707 @@
+{
+  "hash": "ACM",
+  "name": "Assess credit manually",
+  "description": "",
+  "tags": "",
+  "company": "741",
+  "version": "0.01",
+  "theme": "1139",
+  "themeViewUri": "",
+  "serviceUri": "",
+  "servicePackageId": "",
+  "serviceTemplateName": "assessCreditManually_piper",
+  "prefillServiceTemplateName": "prefill_assessCreditManually_piper",
+  "jsDependencies": "[]",
+  "data": {
+    "id": 286562,
+    "type": "questionnaire",
+    "name": "Assess credit manually",
+    "description": "",
+    "successContent": {
+      "NL": ""
+    },
+    "errorContent": {
+      "NL": ""
+    },
+    "submitUrl": "/tasks",
+    "submitErrorUrl": "",
+    "tags": "",
+    "backButton": {
+      "NL": "",
+      "EN": ""
+    },
+    "nextButton": {
+      "NL": "",
+      "EN": ""
+    },
+    "submitButton": {
+      "NL": "",
+      "EN": ""
+    },
+    "locales": "NL,EN",
+    "defLocale": "NL",
+    "company": "Athlon risk assessment",
+    "user": "ATL_Roman",
+    "publishDate": "03-02-2022 04:37:45",
+    "publishVersion": "0.01",
+    "pages": [
+      {
+        "id": 495615,
+        "type": "section",
+        "label": {
+          "NL": "Page 1"
+        },
+        "description": "",
+        "name": "page_1",
+        "elementId": "",
+        "className": "hide-page-name",
+        "condScript": "",
+        "condJson": "",
+        "tags": "",
+        "backButton": {
+          "NL": ""
+        },
+        "nextButton": {
+          "NL": ""
+        },
+        "submitButton": {
+          "NL": ""
+        },
+        "submitUrl": "",
+        "submitErrorUrl": "",
+        "pageUrl": "",
+        "questions": [
+          {
+            "id": 495616,
+            "type": "question",
+            "label": {
+              "NL": "taskId"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "taskid",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "hidden",
+            "validScript": "",
+            "elementId": "taskId1",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495617,
+            "type": "question",
+            "label": {
+              "NL": "taskName"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "taskname",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "hidden",
+            "validScript": "",
+            "elementId": "",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495618,
+            "type": "question",
+            "label": {
+              "NL": "cpScoring"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "cpscoring",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "hidden",
+            "validScript": "",
+            "elementId": "",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495619,
+            "type": "question",
+            "label": {
+              "NL": "biPayment"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "bipayment",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "hidden",
+            "validScript": "",
+            "elementId": "",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495620,
+            "type": "question",
+            "label": {
+              "NL": "processInstanceId"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "processinstanceid",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "hidden",
+            "validScript": "",
+            "elementId": "processInstanceId",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495621,
+            "type": "question",
+            "label": {
+              "NL": "Timestamp for manual process"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "timestamp_for_manual_process",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "hidden",
+            "validScript": "",
+            "elementId": "timestampForManualProcess",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495622,
+            "type": "question",
+            "label": {
+              "NL": "automaticDecisionCode"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "A_DecisionCode",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "hidden",
+            "validScript": "",
+            "elementId": "",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495623,
+            "type": "question",
+            "label": {
+              "NL": "secondOpinion"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "second_opinion",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "hidden",
+            "validScript": "",
+            "elementId": "is_second_opinion",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": "false"
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495624,
+            "type": "question",
+            "label": {
+              "NL": "GroupConsolidationRequired"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "groupconsolidationrequired",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "hidden",
+            "validScript": "",
+            "elementId": "groupconsolidationrequired",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495625,
+            "type": "question",
+            "label": {
+              "NL": "Rejected by"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "rejected_by",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "textfield",
+            "validScript": "",
+            "elementId": "",
+            "className": "hide-if-empty",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": true,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495626,
+            "type": "question",
+            "label": {
+              "NL": "Action options"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "action_options",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "radio",
+            "validScript": "",
+            "elementId": "actionOptions",
+            "className": "tile-selector hide-label header-options M_Assess_element",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": [
+              {
+                "id": 495627,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Assess credit manually"
+                },
+                "description": "",
+                "name": "assess_credit_manually",
+                "defaultValue": true,
+                "disabled": false,
+                "elementId": "assessCreditManually",
+                "className": "M_Assess_element",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": [
+                  {
+                    "id": 495628,
+                    "type": "question",
+                    "label": {
+                      "NL": "Manual decision"
+                    },
+                    "description": {
+                      "NL": ""
+                    },
+                    "name": "manual_decision",
+                    "subLabel": {
+                      "NL": ""
+                    },
+                    "inputType": "dropdown",
+                    "validScript": "",
+                    "elementId": "manualDecision",
+                    "className": "",
+                    "hint": {
+                      "NL": ""
+                    },
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "labelVariables": {
+                      "NL": ""
+                    },
+                    "tags": "",
+                    "defaultValue": {
+                      "NL": ""
+                    },
+                    "disabled": false,
+                    "minDate": "",
+                    "minDateType": "",
+                    "minDateOffset": "",
+                    "maxDate": "",
+                    "maxDateType": "",
+                    "maxDateOffset": "",
+                    "dateType": "calendar",
+                    "secured": false,
+                    "customTemplate": "",
+                    "varNames": "",
+                    "varValues": "{}",
+                    "mask": "",
+                    "validations": [
+                      {
+                        "args": "",
+                        "script": "if (!value || value == '') { return [ERR_EMPTY:\"This field is mandatory\"] }"
+                      }
+                    ],
+                    "deduceJson": "",
+                    "deduceScript": "",
+                    "unselectLabel": {
+                      "NL": "Please select decision"
+                    },
+                    "options": [
+                      {
+                        "id": 495629,
+                        "type": "answeroption",
+                        "label": {
+                          "NL": "Accept all assets"
+                        },
+                        "description": "",
+                        "name": "accept_all_assets",
+                        "defaultValue": false,
+                        "disabled": false,
+                        "elementId": "acceptAllAssets",
+                        "className": "",
+                        "condScript": "",
+                        "condJson": "",
+                        "tooltip": {
+                          "NL": ""
+                        },
+                        "questions": []
+                      },
+                      {
+                        "id": 495630,
+                        "type": "answeroption",
+                        "label": {
+                          "NL": "Accept only marketable assets"
+                        },
+                        "description": "",
+                        "name": "accept_only_marketable_assets",
+                        "defaultValue": false,
+                        "disabled": false,
+                        "elementId": "acceptOnlyMarketableAssets",
+                        "className": "",
+                        "condScript": "",
+                        "condJson": "",
+                        "tooltip": {
+                          "NL": ""
+                        },
+                        "questions": []
+                      },
+                      {
+                        "id": 495631,
+                        "type": "answeroption",
+                        "label": {
+                          "NL": "Accept 10% deposit"
+                        },
+                        "description": "",
+                        "name": "accept_10_deposit",
+                        "defaultValue": false,
+                        "disabled": false,
+                        "elementId": "accept10%deposit",
+                        "className": "",
+                        "condScript": "",
+                        "condJson": "",
+                        "tooltip": {
+                          "NL": ""
+                        },
+                        "questions": []
+                      },
+                      {
+                        "id": 495632,
+                        "type": "answeroption",
+                        "label": {
+                          "NL": "Accept 10% deposit + m.assets"
+                        },
+                        "description": "",
+                        "name": "accept_only_marketable_assets_and_10_deposit",
+                        "defaultValue": false,
+                        "disabled": false,
+                        "elementId": "acceptOnlyMarketableAssetsAnd10%deposit",
+                        "className": "",
+                        "condScript": "",
+                        "condJson": "",
+                        "tooltip": {
+                          "NL": ""
+                        },
+                        "questions": []
+                      },
+                      {
+                        "id": 495633,
+                        "type": "answeroption",
+                        "label": {
+                          "NL": "Accept 15% deposit"
+                        },
+                        "description": "",
+                        "name": "accept_15_deposit",
+                        "defaultValue": false,
+                        "disabled": false,
+                        "elementId": "",
+                        "className": "",
+                        "condScript": "",
+                        "condJson": "",
+                        "tooltip": {
+                          "NL": ""
+                        },
+                        "questions": []
+                      },
+                      {
+                        "id": 495634,
+                        "type": "answeroption",
+                        "label": {
+                          "NL": "Accept 20% deposit"
+                        },
+                        "description": "",
+                        "name": "accept_20_deposit",
+                        "defaultValue": false,
+                        "disabled": false,
+                        "elementId": "",
+                        "className": "",
+                        "condScript": "",
+                        "condJson": "",
+                        "tooltip": {
+                          "NL": ""
+                        },
+                        "questions": []
+                      },
+                      {
+                        "id": 495635,
+                        "type": "answeroption",
+                        "label": {
+                          "NL": "Accept with guarantee"
+                        },
+                        "description": "",
+                        "name": "accept_with_guarantee",
+                        "defaultValue": false,
+                        "disabled": false,
+                        "elementId": "",
+                        "className": "",
+                        "condScript": "",
+                        "condJson": "",
+                        "tooltip": {
+                          "NL": ""
+                        },
+                        "questions": []
+                      },
+                      {
+                        "id": 495636,
+                        "type": "answeroption",
+                        "label": {
+                          "NL": "Accept with max 36 months term"
+                        },
+                        "description": "",
+                        "name": "accept_with_max_36_months_term",
+                        "defaultValue": false,
+                        "disabled": false,
+                        "elementId": "",
+                        "className": "",
+                        "condScript": "",
+                        "condJson": "",
+                        "tooltip": {
+                          "NL": ""
+                        },
+                        "questions": []
+                      },
+                      {
+                        "id": 495637,
+                        "type": "answeroption",
+                        "label": {
+                          "NL": "Accept with other conditions"
+                        },
+                        "description": "",
+                        "name": "accept_with_other_conditions",
+                        "defaultValue": false,
+                        "disabled": false,
+                        "elementId": "",
+                        "className": "",
+                        "condScript": "",
+                        "condJson": "",
+                        "tooltip": {
+                          "NL": ""
+                        },
+                        "questions": []
+                      },
+                      {
+                        "id": 495638,
+                        "type": "answeroption",
+                        "label": {
+                          "NL": "Decline"
+                        },
+                        "description": "",
+                        "name": "decline",
+                        "defaultValue": false,
+                        "disabled": false,
+                        "elementId": "decline",
+                        "className": "",
+                        "condScript": "",
+                        "condJson": "",
+                        "tooltip": {
+                          "NL": ""
+                        },
+                        "questions": []
+                      },
+                      {
+                        "id": 495639,
+                        "type": "answeroption",
+                        "label": {
+                          "NL": "Cancel due to Retail-/Corporate threshold exceeded"
+                        },
+                        "description": "",
+                        "name": "cancel_due_to_retail_corporate_threshold_exceeded",
+                        "defaultValue": false,
+                        "disabled": false,
+                        "elementId": "",
+                        "className": "",
+                        "condScript": "",
+                        "condJson": "[{\"action\":\"Show\",\"page\":\"Page 1\",\"question\":\"groupconsolidationrequired\",\"operation\":\"is\",\"param\":\"false\"}]",
+                        "tooltip": {
+                          "NL": ""
+                        },
+                        "questions": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 495640,
+                    "type": "operator",
+                    "label": {
+                      "NL": "Show accept reasons"
+                    },
+                    "description": "",
+                    "name": "show_accept_reasons",
+                    "operatorType": "condition",
+                    "elementId": "",
+                    "className": "M_Assess_element",
+                    "condScript": "",
+                    "condJson": "[{\"action\":\"Show\",\"page\":\"Page 1\",\"question\":\"manual_decision\",\"operation\":\"is not\",\"param\":\"\"},{\"action\":\"And\",\"page\":\"Page 1\",\"question\":\"manual_decision\",\"operation\":\"is not\",\"param\":\"cancel_due_to_retail_corporate_threshold_exceeded\"}]",
+                    "operatorButton": {
+                      "NL": ""
+                    },
+                    "operands": [
+                      {
+                        "id": 495641,
+                        "type": "question",
+                        "label": {
+                          "NL": "Highlight appropriate pros"
+                        },
+                        "description": {
+                          "NL": ""
+                        },
+                        "name": "pros_reasons",
+                        "subLabel": {
+                          "NL": ""
+                        },
+                        "inputType": "checkbox",
+                        "validScript": "",
+                        "elementId": "highlightAppropriateReasons",
+                        "className": "tile-selector M_Assess_element",
+                        "hint": {
+                          "NL": ""
+                        },
+                        "tooltip": {
+                          "NL": ""
+                        },
+                        "labelVariables": {
+                          "NL": ""
+                        },
+                        "tags": "",
+                        "defaultValue": {
+                          "NL": ""
+                        },
+                        "disabled": false,
+                        "minDate": "",
+                        "minDateType": "",
+                        "minDateOffset": "",
+                        "maxDate": "",
+                        "maxDateType": "",
+                        "maxDateOffset": "",
+                        "dateType": "calendar",
+                        "secured": false,
+                        "customTemplate": "",
+                        "varNames": "",
+                        "varValues": "{}",
+                        "mask": "",
+                        "validations": [
+                          {
+                            "args": "",
+                            "script": "def decision = values.get('manual_decision');\r\n\r\nif(decision.contains('accept') && decision != 'cancel_due_to_retail_corporate_threshold_exceeded' && value == '') {\r\n      return [\r\n        ERR_EMPTY:'This field is mandatory'\r\n    ] \r\n}"
+                          }
+                        ],
+                        "deduceJson": "",
+                        "deduceScript": "",
+                        "unselectLabel": {
+                          "NL": ""
+                        },
+                        "options": [
+                          {
+                            "id": 495642,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Approved with conditions"
+                            },
+                            "description": "",
+                            "name": "approved_with_conditions",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "approvedWithConditions",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495643,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Limited impact of hits on Business Policy Rules"
+                            },
+                            "description": "",
+                            "name": "limited_impact_of_hits_on_business_policy_rules",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "limitedImpactOfHitsOnBusinessPolicyRules",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495644,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Adverse credit info is not material"
+                            },
+                            "description": "",
+                            "name": "adverse_credit_info_is_not_material",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "adverseCreditInfoIsNotMaterial",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495645,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Requested amount is modest compared to Net worth"
+                            },
+                            "description": "",
+                            "name": "requested_amount_is_modest_compared_to_net_worth",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "requestedAmountIsModestComparedToNetWorth",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495646,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Established customer with auditable track record in credit agency"
+                            },
+                            "description": "",
+                            "name": "established_customer_with_auditable_track_record_in_credit_agency",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "establishedCustomerWithAuditableTrackRecordInCreditAgency",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495647,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Existing Athlon customer with positive payment experience"
+                            },
+                            "description": "",
+                            "name": "existing_athlon_customer_with_positive_payment_experience",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "existingAthlonCustomerWithPositivePaymentExperience",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495648,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Government entity"
+                            },
+                            "description": "",
+                            "name": "government_entity",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "governmentEntity",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495649,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Low branch risk"
+                            },
+                            "description": "",
+                            "name": "low_branch_risk",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "lowBranchRisk",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495650,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Part of substantial group"
+                            },
+                            "description": "",
+                            "name": "part_of_substantial_group",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "partOfSubstantialGroup",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495651,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Positive Financial Statement"
+                            },
+                            "description": "",
+                            "name": "positive_financial_statement",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "positiveFinancialStatement",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495652,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Positive info from credit agency"
+                            },
+                            "description": "",
+                            "name": "positive_info_from_credit_agency",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "positiveInfoFromCreditAgency",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495653,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Positive visit by account management"
+                            },
+                            "description": "",
+                            "name": "positive_visit_by_account_management",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "positiveVisitByAccountManagement",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": 495654,
+                    "type": "operator",
+                    "label": {
+                      "NL": "Show decline reasons"
+                    },
+                    "description": "",
+                    "name": "show_decline_reasons",
+                    "operatorType": "condition",
+                    "elementId": "",
+                    "className": "M_Assess_element",
+                    "condScript": "",
+                    "condJson": "[{\"action\":\"Show\",\"page\":\"Page 1\",\"question\":\"manual_decision\",\"operation\":\"is not\",\"param\":\"\"},{\"action\":\"And\",\"page\":\"Page 1\",\"question\":\"manual_decision\",\"operation\":\"is not\",\"param\":\"cancel_due_to_retail_corporate_threshold_exceeded\"}]",
+                    "operatorButton": {
+                      "NL": ""
+                    },
+                    "operands": [
+                      {
+                        "id": 495655,
+                        "type": "question",
+                        "label": {
+                          "NL": "Highlight appropriate cons"
+                        },
+                        "description": {
+                          "NL": ""
+                        },
+                        "name": "cons_reasons",
+                        "subLabel": {
+                          "NL": ""
+                        },
+                        "inputType": "checkbox",
+                        "validScript": "",
+                        "elementId": "highlightAppropriateReasons",
+                        "className": "tile-selector M_Assess_element",
+                        "hint": {
+                          "NL": ""
+                        },
+                        "tooltip": {
+                          "NL": ""
+                        },
+                        "labelVariables": {
+                          "NL": ""
+                        },
+                        "tags": "",
+                        "defaultValue": {
+                          "NL": ""
+                        },
+                        "disabled": false,
+                        "minDate": "",
+                        "minDateType": "",
+                        "minDateOffset": "",
+                        "maxDate": "",
+                        "maxDateType": "",
+                        "maxDateOffset": "",
+                        "dateType": "calendar",
+                        "secured": false,
+                        "customTemplate": "",
+                        "varNames": "",
+                        "varValues": "{}",
+                        "mask": "",
+                        "validations": [
+                          {
+                            "args": "",
+                            "script": "def decision = values.get('manual_decision');\r\n\r\nif(decision.contains('decline')  && decision != 'cancel_due_to_retail_corporate_threshold_exceeded' && value == '') {\r\n      return [\r\n        ERR_EMPTY:'This field is mandatory'\r\n    ] \r\n}"
+                          }
+                        ],
+                        "deduceJson": "",
+                        "deduceScript": "",
+                        "unselectLabel": {
+                          "NL": ""
+                        },
+                        "options": [
+                          {
+                            "id": 495656,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Newly established business"
+                            },
+                            "description": "",
+                            "name": "newly_established_business",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "newlyEstablishedBusiness",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495657,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Recent change of ownership"
+                            },
+                            "description": "",
+                            "name": "recent_change_of_ownership",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "recentChangeOfOwnership",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495658,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Industry Sector disallowed"
+                            },
+                            "description": "",
+                            "name": "industry_sector_disallowed",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "industrySectorDisallowed",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495659,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Lack of information / no auditable track record available"
+                            },
+                            "description": "",
+                            "name": "lack_of_information",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "lackOfInformation",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495660,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Contradicting / misleading information (red flags)"
+                            },
+                            "description": "",
+                            "name": "contradicting_misleading_information_red_flags",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "contradictingMisleadingInformationRedFlags",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495661,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Weak customer profile"
+                            },
+                            "description": "",
+                            "name": "weak_customer_profile",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "weakCustomerProfile",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495662,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Non-cooperative customer"
+                            },
+                            "description": "",
+                            "name": "non_cooperative_customer",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "nonCooperativeCustomer",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495663,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Excluded customer"
+                            },
+                            "description": "",
+                            "name": "excluded_customer",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "excludedCustomer",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495664,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "PEP (Politically Exposed Customer)"
+                            },
+                            "description": "",
+                            "name": "pep_politically_exposed_customer",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "politicallyExposedCustomer",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495665,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Low Credit score"
+                            },
+                            "description": "",
+                            "name": "low_credit_score",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "lowCreditScore",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495666,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Unclear business activities"
+                            },
+                            "description": "",
+                            "name": "unclear_business_activities",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "unclearBusinessActivities",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495667,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Negative / adverse non-financial information"
+                            },
+                            "description": "",
+                            "name": "negative_non_financial_information",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "negativeNonFinancialInformation",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495668,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Integrity doubts"
+                            },
+                            "description": "",
+                            "name": "integrity_doubts",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "integrityDoubts",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495669,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Suspicion of fraud"
+                            },
+                            "description": "",
+                            "name": "suspicion_of_fraud",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "suspicionOfFraud",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495670,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Suspicion of sub-lease"
+                            },
+                            "description": "",
+                            "name": "suspicion_of_sub_lease",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "suspicionOfSubLease",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495671,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Multiple hits on Business Policy Rules"
+                            },
+                            "description": "",
+                            "name": "multiple_hits_on_business_policy_rules",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "multipleHitsOnBusinessPolicyRules",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495672,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Poor financial statements"
+                            },
+                            "description": "",
+                            "name": "poor_financial_statements",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "poorFinancialStatements",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495673,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Outdated Financial Statement (>24 mths)"
+                            },
+                            "description": "",
+                            "name": "outdated_financial_statement_24_mths",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "OutdatedFinancialStatement",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495674,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Requested amount is too high compared to Net worth"
+                            },
+                            "description": "",
+                            "name": "requested_amount_is_too_high_compared_to_net_worth",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "requestedAmountIsTooHighComparedToNetWorth",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495675,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Tax overdue"
+                            },
+                            "description": "",
+                            "name": "tax_overdue",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "taxOverdue",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495676,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Bad experiences with customer"
+                            },
+                            "description": "",
+                            "name": "bad_experiences_with_customer",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "badExperiencesWithCustomer",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495677,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Poor payment experience external"
+                            },
+                            "description": "",
+                            "name": "poor_payment_experience_external",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "poorPaymentExperienceExternal",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495678,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Poor payment experience at Athlon"
+                            },
+                            "description": "",
+                            "name": "poor_payment_experience_at_athlon",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "poorPaymentExperienceAtAthlon",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495679,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Watch List / Problem Credit Loan"
+                            },
+                            "description": "",
+                            "name": "watch_list_problem_credit_loan",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "watchListProblemCreditLoan",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495680,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Bankruptcy / Chapter 11 / Litigation"
+                            },
+                            "description": "",
+                            "name": "bankruptcy_chapter_11_litigation",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "bankruptcyChapter11Litigation",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495681,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Dissolved company"
+                            },
+                            "description": "",
+                            "name": "dissolved_company",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "dissolvedCompany",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          },
+                          {
+                            "id": 495682,
+                            "type": "answeroption",
+                            "label": {
+                              "NL": "Written off previously at Athlon"
+                            },
+                            "description": "",
+                            "name": "written_off_previously_at_athlon",
+                            "defaultValue": false,
+                            "disabled": false,
+                            "elementId": "writtenOffPreviouslyAtAthlon",
+                            "className": "",
+                            "condScript": "",
+                            "condJson": "",
+                            "tooltip": {
+                              "NL": ""
+                            },
+                            "questions": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": 495683,
+                    "type": "question",
+                    "label": {
+                      "NL": "Argumentation"
+                    },
+                    "description": {
+                      "NL": ""
+                    },
+                    "name": "argumentation",
+                    "subLabel": {
+                      "NL": ""
+                    },
+                    "inputType": "textarea",
+                    "validScript": "",
+                    "elementId": "argumentation",
+                    "className": "M_Assess_element",
+                    "hint": {
+                      "NL": ""
+                    },
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "labelVariables": {
+                      "NL": ""
+                    },
+                    "tags": "",
+                    "defaultValue": {
+                      "NL": ""
+                    },
+                    "disabled": false,
+                    "minDate": "",
+                    "minDateType": "",
+                    "minDateOffset": "",
+                    "maxDate": "",
+                    "maxDateType": "",
+                    "maxDateOffset": "",
+                    "dateType": "calendar",
+                    "secured": false,
+                    "customTemplate": "",
+                    "varNames": "",
+                    "varValues": "{\"maxlength\":\"4000\"}",
+                    "mask": "",
+                    "validations": [
+                      {
+                        "args": "",
+                        "script": "if (!value || value == '') { return [ERR_EMPTY:\"This field is mandatory\"] }"
+                      }
+                    ],
+                    "deduceJson": "",
+                    "deduceScript": "",
+                    "unselectLabel": {
+                      "NL": ""
+                    },
+                    "options": []
+                  },
+                  {
+                    "id": 495684,
+                    "type": "question",
+                    "label": {
+                      "NL": "Text area character count decision argumentation"
+                    },
+                    "description": {
+                      "NL": ""
+                    },
+                    "name": "text_area_character_count_decision_argumentation",
+                    "subLabel": {
+                      "NL": ""
+                    },
+                    "inputType": "widget",
+                    "validScript": "",
+                    "elementId": "",
+                    "className": "",
+                    "hint": {
+                      "NL": ""
+                    },
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "labelVariables": {
+                      "NL": ""
+                    },
+                    "tags": "",
+                    "defaultValue": {
+                      "NL": ""
+                    },
+                    "disabled": false,
+                    "minDate": "",
+                    "minDateType": "",
+                    "minDateOffset": "",
+                    "maxDate": "",
+                    "maxDateType": "",
+                    "maxDateOffset": "",
+                    "dateType": "calendar",
+                    "secured": false,
+                    "customTemplate": "textAreaCharactersCount",
+                    "varNames": "",
+                    "varValues": "{\"maxLength\":\"4000\",\"textareaId\":\"argumentation\",\"questionName\":\"argumentation\",\"counterId\":\"argumentation-text-counter\"}",
+                    "mask": "",
+                    "validations": [],
+                    "deduceJson": "",
+                    "deduceScript": "",
+                    "unselectLabel": {
+                      "NL": ""
+                    },
+                    "options": []
+                  },
+                  {
+                    "id": 495685,
+                    "type": "operator",
+                    "label": {
+                      "NL": "Show credit end date"
+                    },
+                    "description": "",
+                    "name": "show_credit_end_date",
+                    "operatorType": "condition",
+                    "elementId": "",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "[{\"action\":\"Show\",\"page\":\"Page 1\",\"question\":\"manual_decision\",\"operation\":\"is not\",\"param\":\"decline\"},{\"action\":\"And\",\"page\":\"Page 1\",\"question\":\"manual_decision\",\"operation\":\"is not\",\"param\":\"\"},{\"action\":\"And\",\"page\":\"Page 1\",\"question\":\"manual_decision\",\"operation\":\"is not\",\"param\":\"cancel_due_to_retail_corporate_threshold_exceeded\"}]",
+                    "operatorButton": {
+                      "NL": ""
+                    },
+                    "operands": [
+                      {
+                        "id": 495686,
+                        "type": "question",
+                        "label": {
+                          "NL": "Credit end date",
+                          "EN": "Credit end date"
+                        },
+                        "description": {
+                          "NL": ""
+                        },
+                        "name": "credit_end_date",
+                        "subLabel": {
+                          "NL": ""
+                        },
+                        "inputType": "date",
+                        "validScript": "import groovy.time.TimeCategory;\r\n\r\ndef pattern;\r\nif (value.contains(\"-\")) {\r\n     pattern = \"dd-MM-yyyy\"\r\n} else {\r\n     pattern = \"dd/MM/yyyy\"\r\n}\r\ndef selectedDate = Date.parse(pattern, value);\r\ndef today = new Date();\r\ndef oneYear;\r\n\r\nuse(TimeCategory) {\r\n    oneYear = today + 1.year - 1\r\n}\r\n\r\nif(selectedDate.after(oneYear)) {\r\n    return [ERR_EMPTY: \"The maximum time limit has been exceeded\"] \r\n};\r\nif(selectedDate.before(today)) {\r\n    return [ERR_EMPTY: \"A date in the past can't be selected\"] \r\n};",
+                        "elementId": "",
+                        "className": "M_Assess_element",
+                        "hint": {
+                          "NL": "",
+                          "EN": ""
+                        },
+                        "tooltip": {
+                          "NL": ""
+                        },
+                        "labelVariables": {
+                          "NL": ""
+                        },
+                        "tags": "",
+                        "defaultValue": {
+                          "NL": "EMPTY",
+                          "EN": ""
+                        },
+                        "disabled": false,
+                        "minDate": "",
+                        "minDateType": "today",
+                        "minDateOffset": "",
+                        "maxDate": "",
+                        "maxDateType": "today",
+                        "maxDateOffset": "+364d",
+                        "dateType": "calendar",
+                        "secured": false,
+                        "customTemplate": "",
+                        "varNames": "",
+                        "varValues": "{\"setDefaultLanguage\":\"true\"}",
+                        "mask": "",
+                        "validations": [
+                          {
+                            "args": "",
+                            "script": "if (!value || value == '') { return [ERR_EMPTY:\"This field is mandatory\"] }"
+                          }
+                        ],
+                        "deduceJson": "",
+                        "deduceScript": "",
+                        "unselectLabel": {
+                          "NL": "",
+                          "EN": ""
+                        },
+                        "options": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 495687,
+                    "type": "question",
+                    "label": {
+                      "NL": "Documents"
+                    },
+                    "description": {
+                      "NL": ""
+                    },
+                    "name": "documents",
+                    "subLabel": {
+                      "NL": ""
+                    },
+                    "inputType": "repeatupload",
+                    "validScript": "",
+                    "elementId": "documents1",
+                    "className": "",
+                    "hint": {
+                      "NL": ""
+                    },
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "labelVariables": {
+                      "NL": ""
+                    },
+                    "tags": "",
+                    "defaultValue": {
+                      "NL": ""
+                    },
+                    "disabled": false,
+                    "minDate": "",
+                    "minDateType": "",
+                    "minDateOffset": "",
+                    "maxDate": "",
+                    "maxDateType": "",
+                    "maxDateOffset": "",
+                    "dateType": "calendar",
+                    "secured": false,
+                    "customTemplate": "",
+                    "varNames": "",
+                    "varValues": "{}",
+                    "mask": "",
+                    "validations": [],
+                    "deduceJson": "",
+                    "deduceScript": "",
+                    "unselectLabel": {
+                      "NL": ""
+                    },
+                    "options": []
+                  },
+                  {
+                    "id": 495688,
+                    "type": "operator",
+                    "label": {
+                      "NL": "OptionalReviewer"
+                    },
+                    "description": "",
+                    "name": "optional_reviewer_condition",
+                    "operatorType": "condition",
+                    "elementId": "",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "[{\"action\":\"Show\",\"page\":\"Page 1\",\"question\":\"A_DecisionCode\",\"operation\":\"is not\",\"param\":\"D\"},{\"action\":\"Or\",\"page\":\"Page 1\",\"question\":\"manual_decision\",\"operation\":\"is\",\"param\":\"cancel_due_to_retail_corporate_threshold_exceeded\"},{\"action\":\"Or\",\"page\":\"Page 1\",\"question\":\"manual_decision\",\"operation\":\"is\",\"param\":\"decline\"}]",
+                    "operatorButton": {
+                      "NL": ""
+                    },
+                    "operands": [
+                      {
+                        "id": 495689,
+                        "type": "question",
+                        "label": {
+                          "NL": "Reviewer (optional)"
+                        },
+                        "description": {
+                          "NL": ""
+                        },
+                        "name": "reviewer",
+                        "subLabel": {
+                          "NL": ""
+                        },
+                        "inputType": "dropdown",
+                        "validScript": "",
+                        "elementId": "reviewer",
+                        "className": "M_Assess_element",
+                        "hint": {
+                          "NL": ""
+                        },
+                        "tooltip": {
+                          "NL": ""
+                        },
+                        "labelVariables": {
+                          "NL": ""
+                        },
+                        "tags": "",
+                        "defaultValue": {
+                          "NL": ""
+                        },
+                        "disabled": false,
+                        "minDate": "",
+                        "minDateType": "",
+                        "minDateOffset": "",
+                        "maxDate": "",
+                        "maxDateType": "",
+                        "maxDateOffset": "",
+                        "dateType": "calendar",
+                        "secured": false,
+                        "customTemplate": "",
+                        "varNames": "",
+                        "varValues": "{}",
+                        "mask": "",
+                        "validations": [],
+                        "deduceJson": "",
+                        "deduceScript": "",
+                        "unselectLabel": {
+                          "NL": "Please select reviewer"
+                        },
+                        "options": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 495690,
+                    "type": "operator",
+                    "label": {
+                      "NL": "RequiredReviewer"
+                    },
+                    "description": "",
+                    "name": "required_reviewer_condition",
+                    "operatorType": "condition",
+                    "elementId": "",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "[{\"action\":\"Show\",\"page\":\"Page 1\",\"question\":\"A_DecisionCode\",\"operation\":\"is\",\"param\":\"D\"},{\"action\":\"And\",\"page\":\"Page 1\",\"question\":\"manual_decision\",\"operation\":\"is not\",\"param\":\"decline\"},{\"action\":\"And\",\"page\":\"Page 1\",\"question\":\"manual_decision\",\"operation\":\"is not\",\"param\":\"cancel_due_to_retail_corporate_threshold_exceeded\"}]",
+                    "operatorButton": {
+                      "NL": ""
+                    },
+                    "operands": [
+                      {
+                        "id": 495691,
+                        "type": "question",
+                        "label": {
+                          "NL": "Reviewer"
+                        },
+                        "description": {
+                          "NL": ""
+                        },
+                        "name": "reviewer",
+                        "subLabel": {
+                          "NL": ""
+                        },
+                        "inputType": "dropdown",
+                        "validScript": "",
+                        "elementId": "reviewer",
+                        "className": "M_Assess_element",
+                        "hint": {
+                          "NL": ""
+                        },
+                        "tooltip": {
+                          "NL": ""
+                        },
+                        "labelVariables": {
+                          "NL": ""
+                        },
+                        "tags": "",
+                        "defaultValue": {
+                          "NL": ""
+                        },
+                        "disabled": false,
+                        "minDate": "",
+                        "minDateType": "",
+                        "minDateOffset": "",
+                        "maxDate": "",
+                        "maxDateType": "",
+                        "maxDateOffset": "",
+                        "dateType": "calendar",
+                        "secured": false,
+                        "customTemplate": "",
+                        "varNames": "",
+                        "varValues": "{}",
+                        "mask": "",
+                        "validations": [
+                          {
+                            "args": "",
+                            "script": "if (!value || value == '') { return [ERR_EMPTY:\"This field is mandatory\"] }"
+                          }
+                        ],
+                        "deduceJson": "",
+                        "deduceScript": "",
+                        "unselectLabel": {
+                          "NL": "Please select reviewer"
+                        },
+                        "options": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 495692,
+                    "type": "question",
+                    "label": {
+                      "NL": "Populate reviewer dropdown with options"
+                    },
+                    "description": {
+                      "NL": ""
+                    },
+                    "name": "populate_reviewer_dropdown_with_options",
+                    "subLabel": {
+                      "NL": ""
+                    },
+                    "inputType": "widget",
+                    "validScript": "",
+                    "elementId": "",
+                    "className": "",
+                    "hint": {
+                      "NL": ""
+                    },
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "labelVariables": {
+                      "NL": ""
+                    },
+                    "tags": "",
+                    "defaultValue": {
+                      "NL": ""
+                    },
+                    "disabled": false,
+                    "minDate": "",
+                    "minDateType": "",
+                    "minDateOffset": "",
+                    "maxDate": "",
+                    "maxDateType": "",
+                    "maxDateOffset": "",
+                    "dateType": "calendar",
+                    "secured": false,
+                    "customTemplate": "populate_assignee_dropdown",
+                    "varNames": "",
+                    "varValues": "{\"dropdownId\":\"reviewer\",\"dropdownName\":\"reviewer\",\"excludeAssignedTo\":\"true\",\"A_DecisionCode\":\"A_DecisionCode\"}",
+                    "mask": "",
+                    "validations": [],
+                    "deduceJson": "",
+                    "deduceScript": "",
+                    "unselectLabel": {
+                      "NL": ""
+                    },
+                    "options": []
+                  }
+                ]
+              },
+              {
+                "id": 495693,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Request more information"
+                },
+                "description": "",
+                "name": "request_more_information",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "requestMoreInformation",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": [
+                  {
+                    "id": 495694,
+                    "type": "question",
+                    "label": {
+                      "NL": "Request information"
+                    },
+                    "description": {
+                      "NL": ""
+                    },
+                    "name": "request_information",
+                    "subLabel": {
+                      "NL": ""
+                    },
+                    "inputType": "textarea",
+                    "validScript": "",
+                    "elementId": "requestInformation",
+                    "className": "",
+                    "hint": {
+                      "NL": ""
+                    },
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "labelVariables": {
+                      "NL": ""
+                    },
+                    "tags": "",
+                    "defaultValue": {
+                      "NL": ""
+                    },
+                    "disabled": false,
+                    "minDate": "",
+                    "minDateType": "",
+                    "minDateOffset": "",
+                    "maxDate": "",
+                    "maxDateType": "",
+                    "maxDateOffset": "",
+                    "dateType": "calendar",
+                    "secured": false,
+                    "customTemplate": "",
+                    "varNames": "",
+                    "varValues": "{}",
+                    "mask": "",
+                    "validations": [
+                      {
+                        "args": "",
+                        "script": "if (!value || value == '') { return [ERR_EMPTY:\"This field is mandatory\"] }"
+                      }
+                    ],
+                    "deduceJson": "",
+                    "deduceScript": "",
+                    "unselectLabel": {
+                      "NL": ""
+                    },
+                    "options": []
+                  },
+                  {
+                    "id": 495695,
+                    "type": "question",
+                    "label": {
+                      "NL": "Text area character count request more info argumentation"
+                    },
+                    "description": {
+                      "NL": ""
+                    },
+                    "name": "text_area_character_count_request_more_info_argumentation",
+                    "subLabel": {
+                      "NL": ""
+                    },
+                    "inputType": "widget",
+                    "validScript": "",
+                    "elementId": "",
+                    "className": "",
+                    "hint": {
+                      "NL": ""
+                    },
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "labelVariables": {
+                      "NL": ""
+                    },
+                    "tags": "",
+                    "defaultValue": {
+                      "NL": ""
+                    },
+                    "disabled": false,
+                    "minDate": "",
+                    "minDateType": "",
+                    "minDateOffset": "",
+                    "maxDate": "",
+                    "maxDateType": "",
+                    "maxDateOffset": "",
+                    "dateType": "calendar",
+                    "secured": false,
+                    "customTemplate": "textAreaCharactersCount",
+                    "varNames": "",
+                    "varValues": "{\"maxLength\":\"4000\",\"textareaId\":\"requestInformation\",\"questionName\":\"request_information\",\"counterId\":\"request-more-info-text-counter\"}",
+                    "mask": "",
+                    "validations": [],
+                    "deduceJson": "",
+                    "deduceScript": "",
+                    "unselectLabel": {
+                      "NL": ""
+                    },
+                    "options": []
+                  }
+                ]
+              },
+              {
+                "id": 495696,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Run automatic assessment again"
+                },
+                "description": "",
+                "name": "retry_automatic_assessment",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "retryAutomaticAssessment",
+                "className": "",
+                "condScript": "",
+                "condJson": "[{\"action\":\"Hide\",\"page\":\"Page 1\",\"question\":\"cpscoring\",\"operation\":\"is\",\"param\":\"false\"},{\"action\":\"And\",\"page\":\"Page 1\",\"question\":\"bipayment\",\"operation\":\"is\",\"param\":\"false\"}]",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": [
+                  {
+                    "id": 495697,
+                    "type": "question",
+                    "label": {
+                      "NL": "Retry info"
+                    },
+                    "description": {
+                      "NL": "If you want to run the automatic credit assessment again, please click the submit button."
+                    },
+                    "name": "retry_info",
+                    "subLabel": {
+                      "NL": ""
+                    },
+                    "inputType": "textlabel",
+                    "validScript": "",
+                    "elementId": "retryInfo",
+                    "className": "",
+                    "hint": {
+                      "NL": ""
+                    },
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "labelVariables": {
+                      "NL": ""
+                    },
+                    "tags": "",
+                    "defaultValue": {
+                      "NL": ""
+                    },
+                    "disabled": false,
+                    "minDate": "",
+                    "minDateType": "",
+                    "minDateOffset": "",
+                    "maxDate": "",
+                    "maxDateType": "",
+                    "maxDateOffset": "",
+                    "dateType": "calendar",
+                    "secured": false,
+                    "customTemplate": "",
+                    "varNames": "",
+                    "varValues": "{}",
+                    "mask": "",
+                    "validations": [],
+                    "deduceJson": "",
+                    "deduceScript": "",
+                    "unselectLabel": {
+                      "NL": ""
+                    },
+                    "options": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 495698,
+            "type": "question",
+            "label": {
+              "NL": "Reason of rejection"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "reason_of_rejection",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "textarea",
+            "validScript": "",
+            "elementId": "reasonOfRejection",
+            "className": "hide-if-empty",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": true,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495699,
+            "type": "question",
+            "label": {
+              "NL": "Hide fields if empty"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "hide_field_if_empty",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "widget",
+            "validScript": "",
+            "elementId": "hideFieldsIfEmpty",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "hide_field_if_empty",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495700,
+            "type": "question",
+            "label": {
+              "NL": "Add class to header options"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "add_class_to_header_options",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "widget",
+            "validScript": "",
+            "elementId": "",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "add_class_to_header_options",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495701,
+            "type": "question",
+            "label": {
+              "NL": "Save answers piper"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "save_answers_piper",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "hidden",
+            "validScript": "",
+            "elementId": "",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": "saveACMFormAnswers_piper"
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495702,
+            "type": "question",
+            "label": {
+              "NL": "hide_save_btn"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "hide_save_btn",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "widget",
+            "validScript": "",
+            "elementId": "hide_save_btn",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "hide_save_btn",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          }
+        ]
+      }
+    ],
+    "version": 0,
+    "token": "nalZ2arq"
+  }
+}
