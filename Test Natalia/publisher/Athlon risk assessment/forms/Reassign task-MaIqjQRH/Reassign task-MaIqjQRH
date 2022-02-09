@@ -1,0 +1,337 @@
+{
+  "hash": "MaIqjQRH",
+  "name": "Reassign task",
+  "description": "",
+  "tags": "",
+  "company": "741",
+  "version": "0.01",
+  "theme": "1139",
+  "themeViewUri": "",
+  "serviceUri": "",
+  "servicePackageId": "",
+  "serviceTemplateName": "reassignTask_piper",
+  "prefillServiceTemplateName": "",
+  "jsDependencies": "[]",
+  "data": {
+    "id": 319663,
+    "type": "questionnaire",
+    "name": "Reassign task",
+    "description": "",
+    "successContent": {
+      "NL": ""
+    },
+    "errorContent": {
+      "NL": ""
+    },
+    "submitUrl": "/tasks",
+    "submitErrorUrl": "",
+    "tags": "",
+    "backButton": {
+      "NL": ""
+    },
+    "nextButton": {
+      "NL": ""
+    },
+    "submitButton": {
+      "NL": ""
+    },
+    "locales": "NL",
+    "defLocale": "NL",
+    "company": "Athlon risk assessment",
+    "user": "ATL_Roman",
+    "publishDate": "03-02-2022 04:39:28",
+    "publishVersion": "0.01",
+    "pages": [
+      {
+        "id": 495730,
+        "type": "section",
+        "label": {
+          "NL": "Page 1"
+        },
+        "description": "",
+        "name": "page_1",
+        "elementId": "",
+        "className": "hide-page-name",
+        "condScript": "",
+        "condJson": "",
+        "tags": "",
+        "backButton": {
+          "NL": ""
+        },
+        "nextButton": {
+          "NL": ""
+        },
+        "submitButton": {
+          "NL": ""
+        },
+        "submitUrl": "",
+        "submitErrorUrl": "",
+        "pageUrl": "",
+        "questions": [
+          {
+            "id": 495731,
+            "type": "question",
+            "label": {
+              "NL": "taskId"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "taskid",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "hidden",
+            "validScript": "",
+            "elementId": "taskId",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495732,
+            "type": "question",
+            "label": {
+              "NL": "taskName"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "taskname",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "hidden",
+            "validScript": "",
+            "elementId": "",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495733,
+            "type": "question",
+            "label": {
+              "NL": "taskProcessInstanceId"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "taskprocessinstanceid",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "hidden",
+            "validScript": "",
+            "elementId": "",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495734,
+            "type": "question",
+            "label": {
+              "NL": "Assign to"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "assign_to",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "dropdown",
+            "validScript": "",
+            "elementId": "assignTo",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [
+              {
+                "args": "",
+                "script": "if (!value || value == '') { return [ERR_EMPTY:\"This field is mandatory\"] }"
+              }
+            ],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": "Please select assignee"
+            },
+            "options": []
+          },
+          {
+            "id": 495735,
+            "type": "question",
+            "label": {
+              "NL": "Populate assignee dropdown with options"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "populate_assignee_dropdown_with_options_319667",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "widget",
+            "validScript": "",
+            "elementId": "",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "populate_assignee_dropdown",
+            "varNames": "",
+            "varValues": "{\"dropdownId\":\"assignTo\",\"dropdownName\":\"assign_to\",\"excludeAssignedTo\":\"true\"}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          }
+        ]
+      }
+    ],
+    "version": 0,
+    "token": "nalZ2arq"
+  }
+}
