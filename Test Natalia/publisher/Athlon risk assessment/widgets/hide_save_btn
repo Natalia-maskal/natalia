@@ -1,0 +1,14 @@
+
+<script>
+	(function () {
+		var FE_current = FE['{{options.containerId}}'];
+		var saveContainer = jQuery('.for-save-container');
+        var option = FE_current.getAnswer({ questionName: 'action_options' });
+        if(option === 'request_more_information' || option === 'retry_automatic_assessment' ) {
+           saveContainer.addClass('hidden');
+        } else if(option === 'assess_credit_manually') {
+           saveContainer.removeClass('hidden'); 
+        }
+	
+	})();
+	</script>
