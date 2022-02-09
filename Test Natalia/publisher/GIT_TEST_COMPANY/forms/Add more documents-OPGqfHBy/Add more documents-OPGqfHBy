@@ -9,7 +9,7 @@
   "themeViewUri": "",
   "serviceUri": "test_srvice-_uri",
   "servicePackageId": "test_package_id",
-  "serviceTemplateName": "PrefillTemplate",
+  "serviceTemplateName": "PrefillTemplate123",
   "prefillServiceTemplateName": "servie_template_name_test",
   "jsDependencies": "[]",
   "data": {
