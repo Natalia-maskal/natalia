@@ -1,0 +1,1769 @@
+{
+  "hash": "3ZIqJy6H",
+  "name": "Review manual credit assessment",
+  "description": "",
+  "tags": "",
+  "company": "741",
+  "version": "0.01",
+  "theme": "1139",
+  "themeViewUri": "",
+  "serviceUri": "",
+  "servicePackageId": "",
+  "serviceTemplateName": "reviewManualCreditAssessment_piper",
+  "prefillServiceTemplateName": "prefill_reviewManualCreditAssessment_piper",
+  "jsDependencies": "[]",
+  "data": {
+    "id": 286597,
+    "type": "questionnaire",
+    "name": "Review manual credit assessment",
+    "description": "",
+    "successContent": {
+      "NL": ""
+    },
+    "errorContent": {
+      "NL": ""
+    },
+    "submitUrl": "/tasks",
+    "submitErrorUrl": "",
+    "tags": "",
+    "backButton": {
+      "NL": ""
+    },
+    "nextButton": {
+      "NL": ""
+    },
+    "submitButton": {
+      "NL": ""
+    },
+    "locales": "NL",
+    "defLocale": "NL",
+    "company": "Athlon risk assessment",
+    "user": "ATL_Roman",
+    "publishDate": "03-02-2022 04:39:52",
+    "publishVersion": "0.01",
+    "pages": [
+      {
+        "id": 495736,
+        "type": "section",
+        "label": {
+          "NL": "Page 1"
+        },
+        "description": "",
+        "name": "page_1",
+        "elementId": "",
+        "className": "hide-page-name",
+        "condScript": "",
+        "condJson": "",
+        "tags": "",
+        "backButton": {
+          "NL": ""
+        },
+        "nextButton": {
+          "NL": ""
+        },
+        "submitButton": {
+          "NL": ""
+        },
+        "submitUrl": "",
+        "submitErrorUrl": "",
+        "pageUrl": "",
+        "questions": [
+          {
+            "id": 495737,
+            "type": "question",
+            "label": {
+              "NL": "taskId"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "taskid",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "hidden",
+            "validScript": "",
+            "elementId": "taskId",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495738,
+            "type": "question",
+            "label": {
+              "NL": "Assessed by"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "assesser",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "textfield",
+            "validScript": "",
+            "elementId": "",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": true,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495739,
+            "type": "question",
+            "label": {
+              "NL": "Manual decision"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "manual_decision",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "dropdown",
+            "validScript": "",
+            "elementId": "manualDecision",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": true,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": [
+              {
+                "id": 495740,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Accept all assets"
+                },
+                "description": "",
+                "name": "accept_all_assets",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "acceptAllAssets",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495741,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Accept only marketable assets"
+                },
+                "description": "",
+                "name": "accept_only_marketable_assets",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "acceptOnlyMarketableAssets",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495742,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Accept 10% deposit"
+                },
+                "description": "",
+                "name": "accept_10_deposit",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "accept10%deposit",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495743,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Accept 10% deposit + m.assets"
+                },
+                "description": "",
+                "name": "accept_only_marketable_assets_and_10_deposit",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "acceptOnlyMarketableAssetsAnd10%deposit",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495744,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Accept 15% deposit"
+                },
+                "description": "",
+                "name": "accept_15_deposit",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495745,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Accept 20% deposit"
+                },
+                "description": "",
+                "name": "accept_20_deposit",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495746,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Accept with guarantee"
+                },
+                "description": "",
+                "name": "accept_with_guarantee",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495747,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Accept with max 36 months term"
+                },
+                "description": "",
+                "name": "accept_with_max_36_months_term",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495748,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Accept with other conditions"
+                },
+                "description": "",
+                "name": "accept_with_other_conditions",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495749,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Decline"
+                },
+                "description": "",
+                "name": "decline",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "decline",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495750,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Bankruptcy"
+                },
+                "description": "",
+                "name": "bankruptcy",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "bankruptcy",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              },
+              {
+                "id": 495751,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Cancel due to Retail-/Corporate threshold exceeded"
+                },
+                "description": "",
+                "name": "cancel_due_to_retail_corporate_threshold_exceeded",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": []
+              }
+            ]
+          },
+          {
+            "id": 495752,
+            "type": "operator",
+            "label": {
+              "NL": "Show accept reasons"
+            },
+            "description": "",
+            "name": "show_accept_reasons",
+            "operatorType": "condition",
+            "elementId": "",
+            "className": "",
+            "condScript": "",
+            "condJson": "[{\"action\":\"Show\",\"page\":\"Page 1\",\"question\":\"taskid\",\"operation\":\"is not\",\"param\":\"\"},{\"action\":\"And\",\"page\":\"Page 1\",\"question\":\"manual_decision\",\"operation\":\"is not\",\"param\":\"cancel_due_to_retail_corporate_threshold_exceeded\"}]",
+            "operatorButton": {
+              "NL": ""
+            },
+            "operands": [
+              {
+                "id": 495753,
+                "type": "question",
+                "label": {
+                  "NL": "Highlight appropriate reasons"
+                },
+                "description": {
+                  "NL": ""
+                },
+                "name": "reasons_pros",
+                "subLabel": {
+                  "NL": ""
+                },
+                "inputType": "checkbox",
+                "validScript": "",
+                "elementId": "highlightAppropriateReasons",
+                "className": "tile-selector",
+                "hint": {
+                  "NL": ""
+                },
+                "tooltip": {
+                  "NL": ""
+                },
+                "labelVariables": {
+                  "NL": ""
+                },
+                "tags": "",
+                "defaultValue": {
+                  "NL": ""
+                },
+                "disabled": false,
+                "minDate": "",
+                "minDateType": "",
+                "minDateOffset": "",
+                "maxDate": "",
+                "maxDateType": "",
+                "maxDateOffset": "",
+                "dateType": "calendar",
+                "secured": false,
+                "customTemplate": "",
+                "varNames": "",
+                "varValues": "{}",
+                "mask": "",
+                "validations": [],
+                "deduceJson": "",
+                "deduceScript": "",
+                "unselectLabel": {
+                  "NL": ""
+                },
+                "options": [
+                  {
+                    "id": 495754,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Approved with conditions"
+                    },
+                    "description": "",
+                    "name": "approved_with_conditions",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "approvedWithConditions",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495755,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Limited impact of hits on Business Policy Rules"
+                    },
+                    "description": "",
+                    "name": "limited_impact_of_hits_on_business_policy_rules",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "limitedImpactOfHitsOnBusinessPolicyRules",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495756,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Adverse credit info is not material"
+                    },
+                    "description": "",
+                    "name": "adverse_credit_info_is_not_material",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "adverseCreditInfoIsNotMaterial",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495757,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Requested amount is modest compared to Net worth"
+                    },
+                    "description": "",
+                    "name": "requested_amount_is_modest_compared_to_net_worth",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "requestedAmountIsModestComparedToNetWorth",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495758,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Established customer with auditable track record in credit agency"
+                    },
+                    "description": "",
+                    "name": "established_customer_with_auditable_track_record_in_credit_agency",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "establishedCustomerWithAuditableTrackRecordInCreditAgency",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495759,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Existing Athlon customer with positive payment experience"
+                    },
+                    "description": "",
+                    "name": "existing_athlon_customer_with_positive_payment_experience",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "existingAthlonCustomerWithPositivePaymentExperience",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495760,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Government entity"
+                    },
+                    "description": "",
+                    "name": "government_entity",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "governmentEntity",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495761,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Low branch risk"
+                    },
+                    "description": "",
+                    "name": "low_branch_risk",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "lowBranchRisk",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495762,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Part of substantial group"
+                    },
+                    "description": "",
+                    "name": "part_of_substantial_group",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "partOfSubstantialGroup",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495763,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Positive Financial Statement"
+                    },
+                    "description": "",
+                    "name": "positive_financial_statement",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "positiveFinancialStatement",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495764,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Positive info from credit agency"
+                    },
+                    "description": "",
+                    "name": "positive_info_from_credit_agency",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "positiveInfoFromCreditAgency",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495765,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Positive visit by account management"
+                    },
+                    "description": "",
+                    "name": "positive_visit_by_account_management",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "positiveVisitByAccountManagement",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 495766,
+            "type": "operator",
+            "label": {
+              "NL": "Show decline reasons"
+            },
+            "description": "",
+            "name": "show_decline_reasons",
+            "operatorType": "condition",
+            "elementId": "",
+            "className": "",
+            "condScript": "",
+            "condJson": "[{\"action\":\"Show\",\"page\":\"Page 1\",\"question\":\"taskid\",\"operation\":\"is not\",\"param\":\"\"},{\"action\":\"And\",\"page\":\"Page 1\",\"question\":\"manual_decision\",\"operation\":\"is not\",\"param\":\"cancel_due_to_retail_corporate_threshold_exceeded\"}]",
+            "operatorButton": {
+              "NL": ""
+            },
+            "operands": [
+              {
+                "id": 495767,
+                "type": "question",
+                "label": {
+                  "NL": "Highlight appropriate reasons"
+                },
+                "description": {
+                  "NL": ""
+                },
+                "name": "reasons_cons",
+                "subLabel": {
+                  "NL": ""
+                },
+                "inputType": "checkbox",
+                "validScript": "",
+                "elementId": "highlightAppropriateReasons",
+                "className": "tile-selector",
+                "hint": {
+                  "NL": ""
+                },
+                "tooltip": {
+                  "NL": ""
+                },
+                "labelVariables": {
+                  "NL": ""
+                },
+                "tags": "",
+                "defaultValue": {
+                  "NL": ""
+                },
+                "disabled": false,
+                "minDate": "",
+                "minDateType": "",
+                "minDateOffset": "",
+                "maxDate": "",
+                "maxDateType": "",
+                "maxDateOffset": "",
+                "dateType": "calendar",
+                "secured": false,
+                "customTemplate": "",
+                "varNames": "",
+                "varValues": "{}",
+                "mask": "",
+                "validations": [],
+                "deduceJson": "",
+                "deduceScript": "",
+                "unselectLabel": {
+                  "NL": ""
+                },
+                "options": [
+                  {
+                    "id": 495768,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Newly established business"
+                    },
+                    "description": "",
+                    "name": "newly_established_business",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "newlyEstablishedBusiness",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495769,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Recent change of ownership"
+                    },
+                    "description": "",
+                    "name": "recent_change_of_ownership",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "recentChangeOfOwnership",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495770,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Industry Sector disallowed"
+                    },
+                    "description": "",
+                    "name": "industry_sector_disallowed",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "industrySectorDisallowed",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495771,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Lack of information / no auditable track record available"
+                    },
+                    "description": "",
+                    "name": "lack_of_information",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "lackOfInformation",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495772,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Contradicting / misleading information (red flags)"
+                    },
+                    "description": "",
+                    "name": "contradicting_misleading_information_red_flags",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "contradictingMisleadingInformationRedFlags",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495773,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Weak customer profile"
+                    },
+                    "description": "",
+                    "name": "weak_customer_profile",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "weakCustomerProfile",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495774,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Non-cooperative customer"
+                    },
+                    "description": "",
+                    "name": "non_cooperative_customer",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "nonCooperativeCustomer",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495775,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Excluded customer"
+                    },
+                    "description": "",
+                    "name": "excluded_customer",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "excludedCustomer",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495776,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "PEP (Politically Exposed Customer)"
+                    },
+                    "description": "",
+                    "name": "pep_politically_exposed_customer",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "politicallyExposedCustomer",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495777,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Low Credit score"
+                    },
+                    "description": "",
+                    "name": "low_credit_score",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "lowCreditScore",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495778,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Unclear business activities"
+                    },
+                    "description": "",
+                    "name": "unclear_business_activities",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "unclearBusinessActivities",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495779,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Negative / adverse non-financial information"
+                    },
+                    "description": "",
+                    "name": "negative_non_financial_information",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "negativeNonFinancialInformation",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495780,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Integrity doubts"
+                    },
+                    "description": "",
+                    "name": "integrity_doubts",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "integrityDoubts",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495781,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Suspicion of fraud"
+                    },
+                    "description": "",
+                    "name": "suspicion_of_fraud",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "suspicionOfFraud",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495782,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Suspicion of sub-lease"
+                    },
+                    "description": "",
+                    "name": "suspicion_of_sub_lease",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "suspicionOfSubLease",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495783,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Multiple hits on Business Policy Rules"
+                    },
+                    "description": "",
+                    "name": "multiple_hits_on_business_policy_rules",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "multipleHitsOnBusinessPolicyRules",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495784,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Poor financial statements"
+                    },
+                    "description": "",
+                    "name": "poor_financial_statements",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "poorFinancialStatements",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495785,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Outdated Financial Statement (>24 mths)"
+                    },
+                    "description": "",
+                    "name": "outdated_financial_statement_24_mths",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "OutdatedFinancialStatement",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495786,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Requested amount is too high compared to Net worth"
+                    },
+                    "description": "",
+                    "name": "requested_amount_is_too_high_compared_to_net_worth",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "requestedAmountIsTooHighComparedToNetWorth",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495787,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Tax overdue"
+                    },
+                    "description": "",
+                    "name": "tax_overdue",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "taxOverdue",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495788,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Bad experiences with customer"
+                    },
+                    "description": "",
+                    "name": "bad_experiences_with_customer",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "badExperiencesWithCustomer",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495789,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Poor payment experience external"
+                    },
+                    "description": "",
+                    "name": "poor_payment_experience_external",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "poorPaymentExperienceExternal",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495790,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Poor payment experience at Athlon"
+                    },
+                    "description": "",
+                    "name": "poor_payment_experience_at_athlon",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "poorPaymentExperienceWithinAthlon",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495791,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Watch List / Problem Credit Loan"
+                    },
+                    "description": "",
+                    "name": "watch_list_problem_credit_loan",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "watchListProblemCreditLoan",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495792,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Bankruptcy / Chapter 11 / Litigation"
+                    },
+                    "description": "",
+                    "name": "bankruptcy_chapter_11_litigation",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "bankruptcyChapter11Litigation",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495793,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Dissolved company"
+                    },
+                    "description": "",
+                    "name": "dissolved_company",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "dissolvedCompany",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  },
+                  {
+                    "id": 495794,
+                    "type": "answeroption",
+                    "label": {
+                      "NL": "Written off previously at Athlon"
+                    },
+                    "description": "",
+                    "name": "written_off_previously_at_athlon",
+                    "defaultValue": false,
+                    "disabled": true,
+                    "elementId": "writtenOffPreviouslyAtAthlon",
+                    "className": "",
+                    "condScript": "",
+                    "condJson": "",
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "questions": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 495795,
+            "type": "question",
+            "label": {
+              "NL": "Argumentation"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "argumentation",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "textarea",
+            "validScript": "",
+            "elementId": "Argumentation",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": true,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495796,
+            "type": "operator",
+            "label": {
+              "NL": "Show if accept decision"
+            },
+            "description": "",
+            "name": "show_if_accept_decision",
+            "operatorType": "condition",
+            "elementId": "",
+            "className": "",
+            "condScript": "",
+            "condJson": "[{\"action\":\"Show\",\"page\":\"Page 1\",\"question\":\"manual_decision\",\"operation\":\"is not\",\"param\":\"\"},{\"action\":\"And\",\"page\":\"Page 1\",\"question\":\"manual_decision\",\"operation\":\"is not\",\"param\":\"decline\"},{\"action\":\"And\",\"page\":\"Page 1\",\"question\":\"manual_decision\",\"operation\":\"is not\",\"param\":\"cancel_due_to_retail_corporate_threshold_exceeded\"}]",
+            "operatorButton": {
+              "NL": ""
+            },
+            "operands": [
+              {
+                "id": 495797,
+                "type": "question",
+                "label": {
+                  "NL": "Credit end date"
+                },
+                "description": {
+                  "NL": ""
+                },
+                "name": "credit_end_date",
+                "subLabel": {
+                  "NL": ""
+                },
+                "inputType": "date",
+                "validScript": "",
+                "elementId": "",
+                "className": "",
+                "hint": {
+                  "NL": ""
+                },
+                "tooltip": {
+                  "NL": ""
+                },
+                "labelVariables": {
+                  "NL": ""
+                },
+                "tags": "",
+                "defaultValue": {
+                  "NL": ""
+                },
+                "disabled": true,
+                "minDate": "",
+                "minDateType": "",
+                "minDateOffset": "",
+                "maxDate": "",
+                "maxDateType": "",
+                "maxDateOffset": "",
+                "dateType": "calendar",
+                "secured": false,
+                "customTemplate": "",
+                "varNames": "",
+                "varValues": "{\"setDefaultLanguage\":\"true\"}",
+                "mask": "",
+                "validations": [],
+                "deduceJson": "",
+                "deduceScript": "",
+                "unselectLabel": {
+                  "NL": ""
+                },
+                "options": []
+              }
+            ]
+          },
+          {
+            "id": 495798,
+            "type": "question",
+            "label": {
+              "NL": "Agree?"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "agree",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "radio",
+            "validScript": "",
+            "elementId": "agree",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [
+              {
+                "args": "",
+                "script": "if (!value || value == '') { return [ERR_EMPTY:\"This field is mandatory\"] }"
+              }
+            ],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": [
+              {
+                "id": 495799,
+                "type": "answeroption",
+                "label": {
+                  "NL": "Yes"
+                },
+                "description": "",
+                "name": "yes",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "yes",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": [
+                  {
+                    "id": 495800,
+                    "type": "question",
+                    "label": {
+                      "NL": "Argumentation"
+                    },
+                    "description": {
+                      "NL": ""
+                    },
+                    "name": "reason_of_agree",
+                    "subLabel": {
+                      "NL": ""
+                    },
+                    "inputType": "textarea",
+                    "validScript": "",
+                    "elementId": "reasonOfAgree",
+                    "className": "",
+                    "hint": {
+                      "NL": ""
+                    },
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "labelVariables": {
+                      "NL": ""
+                    },
+                    "tags": "",
+                    "defaultValue": {
+                      "NL": ""
+                    },
+                    "disabled": false,
+                    "minDate": "",
+                    "minDateType": "",
+                    "minDateOffset": "",
+                    "maxDate": "",
+                    "maxDateType": "",
+                    "maxDateOffset": "",
+                    "dateType": "calendar",
+                    "secured": false,
+                    "customTemplate": "",
+                    "varNames": "",
+                    "varValues": "{}",
+                    "mask": "",
+                    "validations": [],
+                    "deduceJson": "",
+                    "deduceScript": "",
+                    "unselectLabel": {
+                      "NL": ""
+                    },
+                    "options": []
+                  },
+                  {
+                    "id": 495801,
+                    "type": "question",
+                    "label": {
+                      "NL": "Text area character count_reason_of_agree"
+                    },
+                    "description": {
+                      "NL": ""
+                    },
+                    "name": "text_area_character_count_reason_of_agree",
+                    "subLabel": {
+                      "NL": ""
+                    },
+                    "inputType": "widget",
+                    "validScript": "",
+                    "elementId": "",
+                    "className": "",
+                    "hint": {
+                      "NL": ""
+                    },
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "labelVariables": {
+                      "NL": ""
+                    },
+                    "tags": "",
+                    "defaultValue": {
+                      "NL": ""
+                    },
+                    "disabled": false,
+                    "minDate": "",
+                    "minDateType": "",
+                    "minDateOffset": "",
+                    "maxDate": "",
+                    "maxDateType": "",
+                    "maxDateOffset": "",
+                    "dateType": "calendar",
+                    "secured": false,
+                    "customTemplate": "textAreaCharactersCount",
+                    "varNames": "",
+                    "varValues": "{\"maxLength\":\"4000\",\"textareaId\":\"reasonOfAgree\",\"questionName\":\"reason_of_agree\",\"counterId\":\"agree-text-counter\"}",
+                    "mask": "",
+                    "validations": [],
+                    "deduceJson": "",
+                    "deduceScript": "",
+                    "unselectLabel": {
+                      "NL": ""
+                    },
+                    "options": []
+                  }
+                ]
+              },
+              {
+                "id": 495802,
+                "type": "answeroption",
+                "label": {
+                  "NL": "No"
+                },
+                "description": "",
+                "name": "no",
+                "defaultValue": false,
+                "disabled": false,
+                "elementId": "no",
+                "className": "",
+                "condScript": "",
+                "condJson": "",
+                "tooltip": {
+                  "NL": ""
+                },
+                "questions": [
+                  {
+                    "id": 495803,
+                    "type": "question",
+                    "label": {
+                      "NL": "Reason of rejection"
+                    },
+                    "description": {
+                      "NL": ""
+                    },
+                    "name": "reason_of_rejection",
+                    "subLabel": {
+                      "NL": ""
+                    },
+                    "inputType": "textarea",
+                    "validScript": "",
+                    "elementId": "reasonOfRejection1",
+                    "className": "",
+                    "hint": {
+                      "NL": ""
+                    },
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "labelVariables": {
+                      "NL": ""
+                    },
+                    "tags": "",
+                    "defaultValue": {
+                      "NL": ""
+                    },
+                    "disabled": false,
+                    "minDate": "",
+                    "minDateType": "",
+                    "minDateOffset": "",
+                    "maxDate": "",
+                    "maxDateType": "",
+                    "maxDateOffset": "",
+                    "dateType": "calendar",
+                    "secured": false,
+                    "customTemplate": "",
+                    "varNames": "",
+                    "varValues": "{}",
+                    "mask": "",
+                    "validations": [
+                      {
+                        "args": "",
+                        "script": "if (!value || value == '') { return [ERR_EMPTY:\"This field is mandatory\"] }"
+                      }
+                    ],
+                    "deduceJson": "",
+                    "deduceScript": "",
+                    "unselectLabel": {
+                      "NL": ""
+                    },
+                    "options": []
+                  },
+                  {
+                    "id": 495804,
+                    "type": "question",
+                    "label": {
+                      "NL": "Text area character count_reason_of_rejection"
+                    },
+                    "description": {
+                      "NL": ""
+                    },
+                    "name": "text_area_character_count_reason_of_rejection",
+                    "subLabel": {
+                      "NL": ""
+                    },
+                    "inputType": "widget",
+                    "validScript": "",
+                    "elementId": "",
+                    "className": "",
+                    "hint": {
+                      "NL": ""
+                    },
+                    "tooltip": {
+                      "NL": ""
+                    },
+                    "labelVariables": {
+                      "NL": ""
+                    },
+                    "tags": "",
+                    "defaultValue": {
+                      "NL": ""
+                    },
+                    "disabled": false,
+                    "minDate": "",
+                    "minDateType": "",
+                    "minDateOffset": "",
+                    "maxDate": "",
+                    "maxDateType": "",
+                    "maxDateOffset": "",
+                    "dateType": "calendar",
+                    "secured": false,
+                    "customTemplate": "textAreaCharactersCount",
+                    "varNames": "",
+                    "varValues": "{\"maxLength\":\"4000\",\"textareaId\":\"reasonOfRejection1\",\"questionName\":\"reason_of_rejection\",\"counterId\":\"rejection-text-counter\"}",
+                    "mask": "",
+                    "validations": [],
+                    "deduceJson": "",
+                    "deduceScript": "",
+                    "unselectLabel": {
+                      "NL": ""
+                    },
+                    "options": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "version": 0,
+    "token": "nalZ2arq"
+  }
+}
