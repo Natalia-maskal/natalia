@@ -7,10 +7,10 @@
   "version": "0.01",
   "theme": "3006",
   "themeViewUri": "",
-  "serviceUri": "test_srvice-_uri",
-  "servicePackageId": "test_package_id",
+  "serviceUri": "tester_srvice-_uri",
+  "servicePackageId": "tester_package_id",
   "serviceTemplateName": "PrefillTemplate123",
-  "prefillServiceTemplateName": "servie_template_name_test",
+  "prefillServiceTemplateName": "servie_template_name_test1",
   "jsDependencies": "[]",
   "data": {
     "successContent": {
