@@ -1,0 +1,235 @@
+{
+  "hash": "IPIqKQdQ",
+  "name": "Add more documents",
+  "description": "",
+  "tags": "",
+  "company": "741",
+  "version": "0.01",
+  "theme": "1139",
+  "themeViewUri": "",
+  "serviceUri": "",
+  "servicePackageId": "",
+  "serviceTemplateName": "uploadDocuments_piper",
+  "prefillServiceTemplateName": "",
+  "jsDependencies": "[]",
+  "data": {
+    "id": 318668,
+    "type": "questionnaire",
+    "name": "Add more documents",
+    "description": "",
+    "successContent": {
+      "NL": ""
+    },
+    "errorContent": {
+      "NL": ""
+    },
+    "submitUrl": "openProcessDetails:3",
+    "submitErrorUrl": "",
+    "tags": "",
+    "backButton": {
+      "NL": ""
+    },
+    "nextButton": {
+      "NL": ""
+    },
+    "submitButton": {
+      "NL": ""
+    },
+    "locales": "NL",
+    "defLocale": "NL",
+    "company": "Athlon risk assessment",
+    "user": "ATL_Roman",
+    "publishDate": "03-02-2022 04:37:08",
+    "publishVersion": "0.01",
+    "pages": [
+      {
+        "id": 495606,
+        "type": "section",
+        "label": {
+          "NL": "Upload page"
+        },
+        "description": "",
+        "name": "upload_page",
+        "elementId": "",
+        "className": "hide-page-name",
+        "condScript": "",
+        "condJson": "",
+        "tags": "",
+        "backButton": {
+          "NL": ""
+        },
+        "nextButton": {
+          "NL": ""
+        },
+        "submitButton": {
+          "NL": ""
+        },
+        "submitUrl": "",
+        "submitErrorUrl": "",
+        "pageUrl": "",
+        "questions": [
+          {
+            "id": 495607,
+            "type": "question",
+            "label": {
+              "NL": "processInstanceId"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "processinstanceid",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "hidden",
+            "validScript": "",
+            "elementId": "",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495608,
+            "type": "question",
+            "label": {
+              "NL": "history"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "history",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "hidden",
+            "validScript": "",
+            "elementId": "",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          },
+          {
+            "id": 495609,
+            "type": "question",
+            "label": {
+              "NL": "Documents"
+            },
+            "description": {
+              "NL": ""
+            },
+            "name": "documents",
+            "subLabel": {
+              "NL": ""
+            },
+            "inputType": "repeatupload",
+            "validScript": "",
+            "elementId": "documents1",
+            "className": "",
+            "hint": {
+              "NL": ""
+            },
+            "tooltip": {
+              "NL": ""
+            },
+            "labelVariables": {
+              "NL": ""
+            },
+            "tags": "",
+            "defaultValue": {
+              "NL": ""
+            },
+            "disabled": false,
+            "minDate": "",
+            "minDateType": "",
+            "minDateOffset": "",
+            "maxDate": "",
+            "maxDateType": "",
+            "maxDateOffset": "",
+            "dateType": "calendar",
+            "secured": false,
+            "customTemplate": "",
+            "varNames": "",
+            "varValues": "{}",
+            "mask": "",
+            "validations": [
+              {
+                "args": "",
+                "script": "if (value[0] == ' ') { \r\n    \r\n    return [\r\n        ERR_EMPTY:'The document field is empty'\r\n    ] \r\n}"
+              }
+            ],
+            "deduceJson": "",
+            "deduceScript": "",
+            "unselectLabel": {
+              "NL": ""
+            },
+            "options": []
+          }
+        ]
+      }
+    ],
+    "version": 0,
+    "token": "nalZ2arq"
+  }
+}
