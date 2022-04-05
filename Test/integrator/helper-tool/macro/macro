@@ -1,0 +1,10 @@
+
+            <#list node?children as item>
+                "${item?node_name}":
+                <@XMLToJSON item />
+                <#if item_has_next>,</#if>
+            </#list>
+            }
+        </#if>
+    </#if>
+</#macro>
