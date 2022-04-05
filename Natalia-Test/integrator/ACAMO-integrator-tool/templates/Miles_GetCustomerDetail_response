@@ -1,4 +1,0 @@
-{
-    "XML" : "${body.@@markup?json_string}",
-    "JSON": <@XMLToJSON body />
-}

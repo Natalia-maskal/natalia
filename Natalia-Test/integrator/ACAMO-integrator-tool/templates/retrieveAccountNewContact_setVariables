@@ -1,8 +1,0 @@
-<#assign account = body.AccountQueryPage_Output.ListOfAccount.Account />
-{
-    "status": "true",
-    "processVariables": {
-        "AccountId": "${account.Id}",
-        "AccountName" : "${account.AccountName}"
-    }
-}

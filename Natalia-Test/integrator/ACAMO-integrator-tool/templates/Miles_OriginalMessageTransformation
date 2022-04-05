@@ -1,3 +1,0 @@
-<#outputformat "XML">
-${body.variables.MilesXmlObject?no_esc}
-</#outputformat>

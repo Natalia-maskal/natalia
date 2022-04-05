@@ -1,5 +1,0 @@
-{
-    "SessionId": ${body.variables.Miles_SessionId},
-    "country": "es",
-    "maxrecords": 1
-}

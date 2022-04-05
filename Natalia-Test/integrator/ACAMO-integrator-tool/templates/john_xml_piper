@@ -1,6 +1,0 @@
-{
-    "pipes": [
-        {"type": "script", "name": "xmlTransform"},
-        {"type": "action", "name": "callMilesUpdate"}
-    ]
-}

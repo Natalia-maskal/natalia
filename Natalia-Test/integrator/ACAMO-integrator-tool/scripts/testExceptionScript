@@ -1,3 +1,0 @@
-headers["Response-Code"] = "500"
-
-return body

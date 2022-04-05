@@ -1,9 +1,0 @@
-<#if body.errorOccured??>
-    <@printObjectToJson source=body /> 
-<#else>
-    <#assign Opportunity = body.OpportunityQueryPage_Output.ListOfOpportunity.Opportunity>
-    {
-        "status" : "true",
-        "processVariables" : <@addPrefixToParams Opportunity "OPPORTUNITY_" />
-    }
-</#if>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<SofEnvelope>
-    <sessionID>${body.variables.MILES_sessionID}</sessionID>
-    <partnerid>${body.variables.ACCOUNT_ExternalSystemId?keep_after("_")}</partnerid>
-    <reference>${body.variables.OPPORTUNITY_OpportunityName}</reference>
-    <quotereason>426067</quotereason>
-    <drivername>${body.variables.OPPORTUNITY_KeyContactLastName}</drivername>
-</SofEnvelope>

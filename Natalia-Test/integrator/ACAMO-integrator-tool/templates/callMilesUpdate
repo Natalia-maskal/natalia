@@ -1,3 +1,0 @@
-<#outputformat "XML">
-${body.dataTransformed?no_esc}
-</#outputformat>
