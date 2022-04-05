@@ -1,0 +1,149 @@
+[
+  {
+    "dummy": "false",
+    "soapname": "createTaskICMore",
+    "name": "createTaskICMore",
+    "soapAction": "\"document/urn:crmondemand/ws/ecbs/activity/:ActivityInsert\"",
+    "uri": "https://secure-ausomxdca.crmondemand.com/Services/Integration"
+  },
+  {
+    "dummy": "false",
+    "soapname": "deleteEventFromICMore",
+    "name": "deleteEventFromICMore",
+    "soapAction": "\"document/urn:crmondemand/ws/integrationevent/:DeleteEvents\"",
+    "uri": "https://secure-ausomxdca.crmondemand.com/Services/Integration"
+  },
+  {
+    "dummy": "false",
+    "soapname": "downloadFileFromDMS",
+    "name": "downloadFileFromDMS",
+    "soapAction": "downloadFileFromDMS",
+    "uri": "https://aw-odm.intm.fs.corpintra.net/home/athlon/com.eibus.web.soap.Gateway.wcp?organization=o=athlon,cn=cordys,cn=MBB,o=epuint.biz"
+  },
+  {
+    "dummy": "true",
+    "soapname": "DUMMY",
+    "name": "DUMMY",
+    "soapAction": "",
+    "uri": ""
+  },
+  {
+    "dummy": "false",
+    "soapname": "getFilesListFromDMS",
+    "name": "getFilesListFromDMS",
+    "soapAction": "getFilesListFromDMSMockedResponse",
+    "uri": "https://aw-odm.intm.fs.corpintra.net/home/athlon/com.eibus.web.soap.Gateway.wcp?organization=o=athlon,cn=cordys,cn=MBB,o=epuint.biz"
+  },
+  {
+    "dummy": "false",
+    "soapname": "getNewEventFromICMore",
+    "name": "getNewEventFromICMore",
+    "soapAction": "\"document/urn:crmondemand/ws/integrationevent/:GetEvents\"",
+    "uri": "https://secure-ausomxdca.crmondemand.com/Services/Integration"
+  },
+  {
+    "dummy": "false",
+    "soapname": "getSAMLToken",
+    "name": "getSAMLToken",
+    "soapAction": "\"\"",
+    "uri": "https://aw-odm.intm.fs.corpintra.net/home/athlon/com.eibus.web.soap.Gateway.wcp?organization=o=athlon,cn=cordys,cn=MBB,o=epuint.biz"
+  },
+  {
+    "dummy": "false",
+    "soapname": "requestDocumentUploadStatus",
+    "name": "requestDocumentUploadStatus",
+    "soapAction": "\"\"",
+    "uri": "https://aw-odm.intm.fs.corpintra.net/home/athlon/com.eibus.web.soap.Gateway.wcp?organization=o=athlon,cn=cordys,cn=MBB,o=epuint.biz"
+  },
+  {
+    "dummy": "false",
+    "soapname": "requestStatusRequest",
+    "name": "requestStatusRequest",
+    "soapAction": "\"\"",
+    "uri": "https://aw-odm.intm.fs.corpintra.net/home/athlon/com.eibus.web.soap.Gateway.wcp?organization=o=athlon,cn=cordys,cn=MBB,o=epuint.biz"
+  },
+  {
+    "dummy": "true",
+    "soapname": "retrieveAutomaticCreditScoreMockedResponse",
+    "name": "retrieveAutomaticCreditScoreMockedResponse",
+    "soapAction": "retrieveAutomaticCreditScoreMockedResponse",
+    "uri": "retrieveAutomaticCreditScoreMockedResponse"
+  },
+  {
+    "dummy": "true",
+    "soapname": "retrieveAutomaticCreditScoreMockedResponseError",
+    "name": "retrieveAutomaticCreditScoreMockedResponseError",
+    "soapAction": "retrieveAutomaticCreditScoreMockedResponseError",
+    "uri": "retrieveAutomaticCreditScoreMockedResponseError"
+  },
+  {
+    "dummy": "true",
+    "soapname": "retrieveAutomaticCreditScoreMockedResponseHitlist",
+    "name": "retrieveAutomaticCreditScoreMockedResponseHitlist",
+    "soapAction": "retrieveAutomaticCreditScoreMockedResponseHitlist",
+    "uri": "retrieveAutomaticCreditScoreMockedResponseHitlist"
+  },
+  {
+    "dummy": "true",
+    "soapname": "retrieveAutomaticCreditScoreMockedResponseSuccessA",
+    "name": "retrieveAutomaticCreditScoreMockedResponseSuccessA",
+    "soapAction": "retrieveAutomaticCreditScoreMockedResponseSuccessA",
+    "uri": "retrieveAutomaticCreditScoreMockedResponseSuccessA"
+  },
+  {
+    "dummy": "true",
+    "soapname": "retrieveAutomaticCreditScoreMockedResponseSuccessD",
+    "name": "retrieveAutomaticCreditScoreMockedResponseSuccessD",
+    "soapAction": "retrieveAutomaticCreditScoreMockedResponseSuccessD",
+    "uri": "retrieveAutomaticCreditScoreMockedResponseSuccessD"
+  },
+  {
+    "dummy": "true",
+    "soapname": "retrieveAutomaticCreditScoreMockedResponseSuccessR",
+    "name": "retrieveAutomaticCreditScoreMockedResponseSuccessR",
+    "soapAction": "retrieveAutomaticCreditScoreMockedResponseSuccessR",
+    "uri": "retrieveAutomaticCreditScoreMockedResponseSuccessR"
+  },
+  {
+    "dummy": "true",
+    "soapname": "retrieveBIinfoMockedResponse",
+    "name": "retrieveBIinfoMockedResponse",
+    "soapAction": "retrieveBIinfoMockedResponse",
+    "uri": "retrieveBIinfoMockedResponse"
+  },
+  {
+    "dummy": "false",
+    "soapname": "retrieveICMoreAccountData",
+    "name": "retrieveICMoreAccountData",
+    "soapAction": "\"document/urn:crmondemand/ws/ecbs/account/:AccountQueryPage\"",
+    "uri": "https://secure-ausomxdca.crmondemand.com/Services/Integration"
+  },
+  {
+    "dummy": "false",
+    "soapname": "retrieveICMoreUserData",
+    "name": "retrieveICMoreUserData",
+    "soapAction": "\"document/urn:crmondemand/ws/ecbs/user/:UserQueryPage\"",
+    "uri": "https://secure-ausomxdca.crmondemand.com/Services/Integration"
+  },
+  {
+    "dummy": "false",
+    "soapname": "storeFileToDMS",
+    "name": "storeFileToDMS",
+    "soapAction": "\"\"",
+    "uri": "https://aw-odm.intm.fs.corpintra.net/home/athlon/com.eibus.web.soap.Gateway.wcp?organization=o=athlon,cn=cordys,cn=MBB,o=epuint.biz"
+  },
+  {
+    "dummy": "false",
+    "soapname": "updateAccountICMore",
+    "name": "updateAccountICMore",
+    "soapAction": "\"document/urn:crmondemand/ws/ecbs/account/:AccountUpdate\"",
+    "uri": "https://secure-ausomxdca.crmondemand.com/Services/Integration"
+  },
+  {
+    "dummy": "false",
+    "soapname": "updateTaskICMore",
+    "name": "updateTaskICMore",
+    "soapAction": "\"document/urn:crmondemand/ws/ecbs/activity/:ActivityUpdate\"",
+    "uri": "https://secure-ausomxdca.crmondemand.com/Services/Integration"
+  }
+]
