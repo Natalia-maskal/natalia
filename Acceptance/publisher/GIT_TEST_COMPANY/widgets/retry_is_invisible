@@ -1,0 +1,10 @@
+<script>
+    (function() {
+        var retry = document.getElementById("retry"); 
+        var hideRetryOption = FE['{{options.containerId}}'].getAllOptions().initAnswers.hideRetryOption;
+        if(hideRetryOption === 'true') {
+            FE['{{options.containerId}}'].setAnswer({questionName: 'retry', answer: 'no'})
+            retry.style.display = 'none';
+        }
+    })();
+</script>

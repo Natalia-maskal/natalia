@@ -1,0 +1,55 @@
+<script>
+(function() {
+    var FE_current = FE['{{options.containerId}}'];
+    var dropdownContainer = jQuery('#{{options.containerId}} #{{widget.variables.dropdownId}}');
+    var dropdownEl = dropdownContainer.find('select');
+    var dropdownName = "{{widget.variables.dropdownName}}";
+    var currentAnswer = FE_current['storedAnswer_' + dropdownName] == null
+        ? (FE_current.getAllOptions().initAnswers[dropdownName] || "")
+        : FE_current['storedAnswer_' + dropdownName];
+    var excludeMyself = "{{widget.variables.excludeMyself}}";
+    var excludeAssignedTo = "{{widget.variables.excludeAssignedTo}}";
+    var submitBtn = jQuery('#{{options.containerId}} .fe-btn-submit');
+    
+    FE_current.setAnswer({
+        questionName: dropdownName,
+        answer: currentAnswer
+    });
+    var changeFunc = dropdownEl[0].onchange;
+    dropdownEl[0].onchange = null;
+    dropdownEl.on('change', function() {
+        var answer = dropdownEl.val();
+        FE_current['storedAnswer_' + dropdownName] = answer;
+        changeFunc.call(dropdownEl[0]);
+    });
+    if (FE_current['usersData_' + dropdownName]) {
+        return populateDropdown(FE_current['usersData_' + dropdownName]);
+    }
+    submitBtn.addClass('disabled');
+    dropdownContainer.hide();
+    FE_current.serviceCall({
+        data: {
+            name: "getUsersOfGroup_piper",
+            taskId: FE_current.getAnswer({ questionName: 'taskid' }),
+            taskName: FE_current.getAnswer({ questionName: 'taskname' }),
+            excludeMyself: !!excludeMyself,
+            excludeAssignedTo: !!excludeAssignedTo,
+            usersTask: true
+        },
+        success: function(users) {
+            FE_current['usersData_' + dropdownName] = users;
+             populateDropdown(users);
+             submitBtn.removeClass('disabled');
+             dropdownContainer.show()
+        }
+    });
+    function populateDropdown(users) {
+        var h = [];
+        users.usersOfGroup.forEach(function(user) {
+            var selected = (currentAnswer === user.id) ? "selected" : "";
+            h.push('<option value="'+user.id+'" '+selected+'>'+user.firstName+' '+user.lastName+'</option>');
+        });
+        dropdownEl.append(h.join(''));
+    }
+})();
+</script>

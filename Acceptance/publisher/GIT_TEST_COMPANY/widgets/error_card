@@ -1,0 +1,20 @@
+<mat-card id="form-error-card" class="mat-card form-error-card m-b-30">
+    <mat-card-title class="mat-card-title"></mat-card-title>
+    <mat-card-content class="mat-card-content"></mat-card-content>
+</mat-card>
+
+<script>
+    (function() {
+        var cardTitle = $('#form-error-card .mat-card-title');
+        var cardContent = $('#form-error-card .mat-card-content');
+        var initAnswers = FE['{{options.containerId}}'].getAllOptions().initAnswers;
+        
+        var formTitleContainer = $('#{{options.containerId}} .form-title');
+        var currentFormTitle = formTitleContainer.html();
+        var updatedFormTitle = currentFormTitle + (initAnswers.problemWith ? ' with ' + initAnswers.problemWith : '');
+        formTitleContainer.html(updatedFormTitle);
+        
+        cardTitle.html(initAnswers.ErrCode);
+        cardContent.html(initAnswers.ErrMessage);
+    })();
+</script>
